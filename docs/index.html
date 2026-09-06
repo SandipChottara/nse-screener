@@ -45,6 +45,13 @@
   .lv div{text-align:center}
   .lv .k{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px}
   .lv .v{font-size:14px;font-weight:600;margin-top:2px}
+  .whywrap{margin-top:10px;padding-top:9px;border-top:1px solid var(--line)}
+  .whybtn{font-size:12.5px;color:var(--gold);font-weight:600;cursor:pointer;
+    user-select:none;display:flex;justify-content:space-between;align-items:center}
+  .arw{font-size:11px;color:var(--dim)}
+  .whylist{display:none;margin:9px 0 0;padding:0 0 0 17px;font-size:12.5px;
+    color:var(--dim);line-height:1.65}
+  .whylist li{margin-bottom:4px}
   .note{background:rgba(224,168,0,.1);border:1px solid #8A6D14;color:#F3CC5C;
     border-radius:10px;padding:11px 13px;margin-bottom:11px;font-size:13px}
   .empty{text-align:center;color:var(--dim);padding:48px 24px;font-size:14px;line-height:1.6}
@@ -109,7 +116,24 @@ function card(r,i,kind){
     '<div class="badges">'+b.join('')+'</div>'+
     '<div class="lv"><div><div class="k">Score</div><div class="v">'+num(r.score)+'</div></div>'+
     '<div><div class="k">Stop Loss</div><div class="v down">₹'+num(r.sl)+'</div></div>'+
-    '<div><div class="k">Target 1</div><div class="v up">₹'+num(r.t1)+'</div></div></div></div>';
+    '<div><div class="k">Target 1</div><div class="v up">₹'+num(r.t1)+'</div></div></div>'+
+    why(r,i)+'</div>';
+}
+
+function why(r,i){
+  if(!r.why||!r.why.length) return '';
+  var id='w'+TAB+i;
+  var items=r.why.map(function(x){return '<li>'+esc(x)+'</li>';}).join('');
+  return '<div class="whywrap">'+
+    '<div class="whybtn" onclick="tog(\''+id+'\',this)">Why this pick? <span class="arw">▾</span></div>'+
+    '<ul class="whylist" id="'+id+'">'+items+'</ul></div>';
+}
+
+function tog(id,el){
+  var l=document.getElementById(id);
+  var open=l.style.display==='block';
+  l.style.display=open?'none':'block';
+  el.querySelector('.arw').textContent=open?'▾':'▴';
 }
 
 function render(){
