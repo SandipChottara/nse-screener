@@ -140,7 +140,9 @@ def update_track_record(fno, tier_a, tier_b, results_by_sym, fno_short_or_none=N
         room = PICKS_PER_CATEGORY - already_today.get(cat, 0)
         if room <= 0:
             continue
-        for r in lst:
+        # Top 3 of this category ONLY -- no backfilling from rank 4+ when a
+        # slot is lost to deduplication. The day's list genuinely shrinks.
+        for r in lst[:PICKS_PER_CATEGORY]:
             if room <= 0:
                 break
             sym = r["Symbol"]
