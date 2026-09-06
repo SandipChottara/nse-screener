@@ -39,6 +39,7 @@
   .b{font-size:11px;padding:3px 8px;border-radius:20px;background:var(--card2);
     border:1px solid var(--line);color:var(--dim);white-space:nowrap}
   .b.g{background:rgba(30,123,79,.18);border-color:#2E7D52;color:#7FE0AC}
+  .b.r{background:rgba(179,38,30,.2);border-color:#8C2F28;color:#FF9E96}
   .b.gold{background:rgba(224,168,0,.15);border-color:#8A6D14;color:#F3CC5C}
   .lv{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px;
     padding-top:10px;border-top:1px solid var(--line)}
@@ -94,6 +95,7 @@
 
 <div class="tabs">
   <div class="tab on" data-k="fno">F&amp;O</div>
+  <div class="tab" data-k="fno_short">Short</div>
   <div class="tab" data-k="tier_a">Swing</div>
   <div class="tab" data-k="tier_b">Invest</div>
   <div class="tab" data-k="track">Track</div>
@@ -177,7 +179,12 @@ function card(r,i,kind){
   var chg = r.chg===null?'':(r.chg>=0?'+':'')+r.chg+'%';
   var cls = r.chg>=0?'up':'down';
   var b=[];
-  if(kind==='fno'){
+  if(kind==='fno_short'){
+    if(r.action) b.push('<span class="b r">'+esc(r.action)+'</span>');
+    if(r.confidence&&r.confidence!=='—') b.push('<span class="b gold">'+esc(r.confidence)+'</span>');
+    if(r.trend) b.push('<span class="b">'+esc(r.trend)+'</span>');
+    if(r.pattern) b.push('<span class="b">'+esc(r.pattern)+'</span>');
+  }else if(kind==='fno'){
     if(r.action) b.push('<span class="b g">'+esc(r.action)+'</span>');
     if(r.confidence&&r.confidence!=='—') b.push('<span class="b gold">'+esc(r.confidence)+'</span>');
     if(r.trend) b.push('<span class="b">'+esc(r.trend)+'</span>');
@@ -197,8 +204,8 @@ function card(r,i,kind){
     '<div class="price">₹'+num(r.cmp)+'<br><span class="'+cls+'" style="font-size:12px">'+chg+'</span></div></div>'+
     '<div class="badges">'+b.join('')+'</div>'+
     '<div class="lv"><div><div class="k">Score</div><div class="v">'+num(r.score)+'</div></div>'+
-    '<div><div class="k">Stop Loss</div><div class="v down">₹'+num(r.sl)+'</div></div>'+
-    '<div><div class="k">Target 1</div><div class="v up">₹'+num(r.t1)+'</div></div></div>'+
+    '<div><div class="k">'+(kind==='fno_short'?'SL (above)':'Stop Loss')+'</div><div class="v down">₹'+num(r.sl)+'</div></div>'+
+    '<div><div class="k">'+(kind==='fno_short'?'T1 (below)':'Target 1')+'</div><div class="v up">₹'+num(r.t1)+'</div></div></div>'+
     why(r,i)+'</div>';
 }
 
@@ -249,8 +256,9 @@ function trackHtml(){
     var st=p.status==='closed'
       ? '<span class="b">'+esc(p.exit_reason||'closed')+'</span>'
       : '<span class="b gold">open'+(p.days_held?' &middot; '+p.days_held+'d':'')+'</span>';
+    var sd = p.side==='SHORT' ? '<span class="tcat" style="background:rgba(179,38,30,.25);color:#FF9E96">SHORT</span>' : '';
     h+='<div class="trow"><div class="tleft"><b>'+esc(p.symbol)+'</b>'+
-       '<span class="tcat">'+esc(p.category)+'</span><br>'+
+       '<span class="tcat">'+esc(p.category)+'</span>'+sd+'<br>'+
        '<span class="tdate">'+esc(p.date)+' @ &#8377;'+num(p.entry)+'</span><br>'+st+'</div>'+
        '<div class="tright '+pnlCls(p.pnl_pct)+'">'+pnlTxt(p.pnl_pct)+'</div></div>';
   });
