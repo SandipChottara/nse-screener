@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1F3864">
+<title>NSE Screener</title>
+<link rel="manifest" href="manifest.json">
+<style>
+  :root{
+    --navy:#1F3864; --blue:#2E5C9A; --green:#1E7B4F; --red:#B3261E;
+    --bg:#0E1420; --card:#18202F; --card2:#1E2839;
+    --line:#2A3547; --text:#E8EDF5; --dim:#93A1B8; --gold:#E0A800;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    padding-bottom:env(safe-area-inset-bottom)}
+  header{background:linear-gradient(135deg,var(--navy),var(--blue));
+    padding:calc(14px + env(safe-area-inset-top)) 16px 14px;position:sticky;top:0;z-index:10;
+    box-shadow:0 2px 12px rgba(0,0,0,.4)}
+  h1{margin:0;font-size:18px;font-weight:700;letter-spacing:.2px}
+  .sub{font-size:12px;color:#C3D2E8;margin-top:3px}
+  .tabs{display:flex;background:var(--card);position:sticky;
+    top:calc(62px + env(safe-area-inset-top));z-index:9;border-bottom:1px solid var(--line)}
+  .tab{flex:1;padding:13px 4px;text-align:center;font-size:13px;font-weight:600;
+    color:var(--dim);border-bottom:2.5px solid transparent;cursor:pointer;user-select:none}
+  .tab.on{color:#fff;border-bottom-color:var(--gold)}
+  .wrap{padding:12px 12px 28px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:12px 13px;margin-bottom:10px}
+  .row1{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .sym{font-size:17px;font-weight:700;letter-spacing:.3px}
+  .rank{display:inline-block;background:var(--navy);color:#fff;font-size:11px;font-weight:700;
+    border-radius:5px;padding:2px 6px;margin-right:7px;vertical-align:middle}
+  .price{font-size:15px;font-weight:600;text-align:right;white-space:nowrap}
+  .up{color:#3FBF7F}.down{color:#FF6B6B}
+  .badges{margin:9px 0 0;display:flex;flex-wrap:wrap;gap:5px}
+  .b{font-size:11px;padding:3px 8px;border-radius:20px;background:var(--card2);
+    border:1px solid var(--line);color:var(--dim);white-space:nowrap}
+  .b.g{background:rgba(30,123,79,.18);border-color:#2E7D52;color:#7FE0AC}
+  .b.gold{background:rgba(224,168,0,.15);border-color:#8A6D14;color:#F3CC5C}
+  .lv{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px;
+    padding-top:10px;border-top:1px solid var(--line)}
+  .lv div{text-align:center}
+  .lv .k{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px}
+  .lv .v{font-size:14px;font-weight:600;margin-top:2px}
+  .note{background:rgba(224,168,0,.1);border:1px solid #8A6D14;color:#F3CC5C;
+    border-radius:10px;padding:11px 13px;margin-bottom:11px;font-size:13px}
+  .empty{text-align:center;color:var(--dim);padding:48px 24px;font-size:14px;line-height:1.6}
+  .load{text-align:center;padding:60px 20px;color:var(--dim)}
+  .spin{width:26px;height:26px;border:3px solid var(--line);border-top-color:var(--gold);
+    border-radius:50%;animation:s .8s linear infinite;margin:0 auto 14px}
+  @keyframes s{to{transform:rotate(360deg)}}
+  .refresh{background:none;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:7px;
+    padding:5px 11px;font-size:12px;cursor:pointer}
+  .hdr-row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+</style>
+</head>
+<body>
+<header>
+  <div class="hdr-row">
+    <div>
+      <h1>NSE Screener</h1>
+      <div class="sub" id="meta">Loading…</div>
+    </div>
+    <button class="refresh" onclick="load(true)">Refresh</button>
+  </div>
+</header>
+
+<div class="tabs">
+  <div class="tab on" data-k="fno">F&amp;O</div>
+  <div class="tab" data-k="tier_a">Swing</div>
+  <div class="tab" data-k="tier_b">Invest</div>
+</div>
+
+<div class="wrap" id="out"><div class="load"><div class="spin"></div>Loading picks…</div></div>
+
+<script>
+var DATA=null, TAB='fno';
+
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){
+  return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+
+function num(v,suf){return (v===null||v===undefined)?'—':v+(suf||'');}
+
+function card(r,i,kind){
+  var chg = r.chg===null?'':(r.chg>=0?'+':'')+r.chg+'%';
+  var cls = r.chg>=0?'up':'down';
+  var b=[];
+  if(kind==='fno'){
+    if(r.action) b.push('<span class="b g">'+esc(r.action)+'</span>');
+    if(r.confidence&&r.confidence!=='—') b.push('<span class="b gold">'+esc(r.confidence)+'</span>');
+    if(r.trend) b.push('<span class="b">'+esc(r.trend)+'</span>');
+  }else if(kind==='tier_a'){
+    if(r.signal) b.push('<span class="b g">'+esc(r.signal)+'</span>');
+    if(r.buildup) b.push('<span class="b gold">🔥 F&amp;O Long Buildup</span>');
+    if(r.roe!=null) b.push('<span class="b">ROE '+r.roe+'%</span>');
+    if(r.pattern) b.push('<span class="b">'+esc(r.pattern)+'</span>');
+  }else{
+    if(r.blended!=null) b.push('<span class="b g">Blended '+r.blended+'</span>');
+    if(r.roe!=null) b.push('<span class="b">ROE '+r.roe+'%</span>');
+    if(r.pe!=null) b.push('<span class="b">P/E '+r.pe+'</span>');
+    if(r.pe!=null&&r.pe5y!=null&&r.pe<r.pe5y) b.push('<span class="b gold">Below 5Y avg P/E</span>');
+  }
+  return '<div class="card">'+
+    '<div class="row1"><div><span class="rank">'+(i+1)+'</span><span class="sym">'+esc(r.symbol)+'</span></div>'+
+    '<div class="price">₹'+num(r.cmp)+'<br><span class="'+cls+'" style="font-size:12px">'+chg+'</span></div></div>'+
+    '<div class="badges">'+b.join('')+'</div>'+
+    '<div class="lv"><div><div class="k">Score</div><div class="v">'+num(r.score)+'</div></div>'+
+    '<div><div class="k">Stop Loss</div><div class="v down">₹'+num(r.sl)+'</div></div>'+
+    '<div><div class="k">Target 1</div><div class="v up">₹'+num(r.t1)+'</div></div></div></div>';
+}
+
+function render(){
+  var out=document.getElementById('out');
+  if(!DATA){return;}
+  var list=DATA[TAB]||[], h='';
+  (DATA.notes||[]).forEach(function(n){h+='<div class="note">⚠️ '+esc(n)+'</div>';});
+  if(!list.length){
+    h+='<div class="empty">No picks in this category today.<br><br>'+
+       'That means nothing cleared this strategy\'s criteria — not an error.</div>';
+  }else{
+    list.forEach(function(r,i){h+=card(r,i,TAB);});
+  }
+  out.innerHTML=h;
+  window.scrollTo(0,0);
+}
+
+function load(bust){
+  fetch('data.json'+(bust?('?t='+Date.now()):''),{cache:bust?'reload':'default'})
+    .then(function(r){if(!r.ok)throw new Error(r.status);return r.json();})
+    .then(function(d){
+      DATA=d;
+      document.getElementById('meta').textContent=
+        d.generated_at+' · '+d.universe_scanned+' stocks scanned';
+      render();
+    })
+    .catch(function(e){
+      document.getElementById('out').innerHTML=
+        '<div class="empty">Could not load data.<br><br>'+
+        'If this is the first run, the scheduled job may not have completed yet.<br>'+
+        '<span style="font-size:12px;color:#6B7A94">('+esc(e.message)+')</span></div>';
+      document.getElementById('meta').textContent='No data';
+    });
+}
+
+Array.prototype.forEach.call(document.querySelectorAll('.tab'),function(t){
+  t.onclick=function(){
+    Array.prototype.forEach.call(document.querySelectorAll('.tab'),function(x){x.classList.remove('on');});
+    t.classList.add('on'); TAB=t.dataset.k; render();
+  };
+});
+load();
+</script>
+</body>
+</html>

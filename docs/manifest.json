@@ -1,0 +1,9 @@
+{
+  "name": "NSE Screener",
+  "short_name": "NSE",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0E1420",
+  "theme_color": "#1F3864",
+  "orientation": "portrait"
+}
