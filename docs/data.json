@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-06 07:46 UTC",
+ "generated_at": "2026-09-06 12:37 UTC",
  "universe_scanned": 500,
  "fno_universe": 210,
  "notes": [],
@@ -660,6 +660,146 @@
    "roe": 15.7,
    "pe": 36.3,
    "pe5y": 38.37
+  }
+ ],
+ "track_summary": {
+  "F&O": {
+   "total": 3,
+   "closed": 0,
+   "open": 0,
+   "realized_avg": null,
+   "unrealized_avg": null,
+   "win_rate": null
+  },
+  "Swing": {
+   "total": 3,
+   "closed": 0,
+   "open": 0,
+   "realized_avg": null,
+   "unrealized_avg": null,
+   "win_rate": null
+  },
+  "Investment": {
+   "total": 1,
+   "closed": 0,
+   "open": 0,
+   "realized_avg": null,
+   "unrealized_avg": null,
+   "win_rate": null
+  }
+ },
+ "track_picks": [
+  {
+   "date": "2026-09-06",
+   "category": "Investment",
+   "symbol": "TMCV",
+   "entry": 458.2,
+   "sl": 435.29,
+   "t1": 504.02,
+   "t2": 526.93,
+   "score": 37.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false
+  },
+  {
+   "date": "2026-09-06",
+   "category": "Swing",
+   "symbol": "MCX",
+   "entry": 3275.4,
+   "sl": 3111.63,
+   "t1": 3602.94,
+   "t2": 3766.71,
+   "score": 80.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false
+  },
+  {
+   "date": "2026-09-06",
+   "category": "F&O",
+   "symbol": "KOTAKBANK",
+   "entry": 424.5,
+   "sl": 403.27,
+   "t1": 466.95,
+   "t2": 488.17,
+   "score": 65.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false
+  },
+  {
+   "date": "2026-09-06",
+   "category": "F&O",
+   "symbol": "JINDALSTEL",
+   "entry": 1165.0,
+   "sl": 1106.75,
+   "t1": 1281.5,
+   "t2": 1339.75,
+   "score": 77.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false
+  },
+  {
+   "date": "2026-09-06",
+   "category": "F&O",
+   "symbol": "INDUSINDBK",
+   "entry": 1008.5,
+   "sl": 958.07,
+   "t1": 1109.35,
+   "t2": 1159.77,
+   "score": 67.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false
+  },
+  {
+   "date": "2026-09-06",
+   "category": "Swing",
+   "symbol": "HAL",
+   "entry": 4856.0,
+   "sl": 4613.2,
+   "t1": 5341.6,
+   "t2": 5584.4,
+   "score": 74.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false
+  },
+  {
+   "date": "2026-09-06",
+   "category": "Swing",
+   "symbol": "APLAPOLLO",
+   "entry": 2250.0,
+   "sl": 2137.5,
+   "t1": 2475.0,
+   "t2": 2587.5,
+   "score": 85.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false
   }
  ]
 }
