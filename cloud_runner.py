@@ -147,6 +147,46 @@ def main():
     fno.sort(key=lambda r: (r["fo_action"] != "🟢 STRONG BUY", -r["LONG SCORE"]))
     fno = fno[:TOP_N]
 
+    def build_why(r, kind):
+        """Plain-English reasons, built from the actual data that drove the pick."""
+        w = []
+        if kind == "fno":
+            if r.get("fo_trend"):
+                w.append(f"F&O flow: {r['fo_trend'].replace('✅','').replace('❌','').strip().title()}")
+            if r.get("long_buildup"):
+                w.append("Long buildup — price up AND open interest rising together")
+            if r.get("fo_confidence") and r["fo_confidence"] != "—":
+                w.append(f"Confidence: {r['fo_confidence'].replace('⭐','').strip()}")
+        if r.get("Pattern Long") and r["Pattern Long"] not in ("No Pattern", "—", None):
+            w.append(f"Chart pattern: {r['Pattern Long']}")
+        if r.get("EMA Trend"):
+            w.append(f"Trend: {r['EMA Trend']}")
+        rsi = r.get("RSI")
+        if rsi is not None:
+            if 40 <= rsi <= 65:
+                w.append(f"RSI {rsi:.0f} — in the healthy entry zone")
+            elif rsi > 70:
+                w.append(f"RSI {rsi:.0f} — overbought, may pull back first")
+            elif rsi < 40:
+                w.append(f"RSI {rsi:.0f} — weak momentum")
+        if r.get("Vol Status") in ("Strong", "Very Strong"):
+            w.append(f"Volume: {r['Vol Status'].lower()} vs its 20-day average")
+        if kind in ("a", "b"):
+            if r.get("roe") is not None:
+                w.append(f"ROE {r['roe']:.0f}% — passed the quality gate")
+            if r.get("pe_ttm") is not None and r.get("pe_5y_median") is not None:
+                if r["pe_ttm"] < r["pe_5y_median"]:
+                    w.append(f"P/E {r['pe_ttm']:.0f} vs its own 5-year average of {r['pe_5y_median']:.0f} — cheaper than usual")
+                else:
+                    w.append(f"P/E {r['pe_ttm']:.0f} vs 5-year average {r['pe_5y_median']:.0f} — richer than usual")
+            if r.get("market_cap_cr"):
+                w.append(f"Market cap Rs {r['market_cap_cr']:,.0f} Cr")
+            if r.get("avg_daily_turnover_cr"):
+                w.append(f"Trades ~Rs {r['avg_daily_turnover_cr']:,.0f} Cr/day — liquid enough to exit")
+        if kind == "b" and r.get("fund_score") is not None and r.get("tech_score") is not None:
+            w.append(f"Ranked on fundamentals ({r['fund_score']:.0f}/100) weighted 65%, technicals ({r['tech_score']:.0f}/100) 35%")
+        return w
+
     def pack(r, kind):
         d = {
             "symbol": r["Symbol"], "cmp": safe(r["CMP"]), "chg": safe(r["Day Chg %"]),
@@ -154,6 +194,7 @@ def main():
             "signal": r["LONG SIGNAL"], "rsi": safe(r["RSI"]),
             "pattern": r.get("Pattern Long"),
             "sl": safe(r.get("SL Long")), "t1": safe(r.get("T1 Long")), "t2": safe(r.get("T2 Long")),
+            "why": build_why(r, kind),
         }
         if kind == "fno":
             d.update({"action": r.get("fo_action"), "confidence": r.get("fo_confidence"),
