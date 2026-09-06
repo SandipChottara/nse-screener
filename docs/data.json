@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-06 15:07 UTC",
+ "generated_at": "2026-09-06 15:23 UTC",
  "universe_scanned": 500,
  "fno_universe": 210,
  "notes": [],
@@ -733,7 +733,7 @@
    "win_rate": null
   },
   "Investment": {
-   "total": 3,
+   "total": 1,
    "closed": 0,
    "open": 0,
    "realized_avg": null,
@@ -812,23 +812,6 @@
   },
   {
    "date": "2026-09-06",
-   "category": "Investment",
-   "symbol": "HINDZINC",
-   "side": "LONG",
-   "entry": 601.0,
-   "sl": 570.95,
-   "t1": 661.1,
-   "t2": 691.15,
-   "score": 68.0,
-   "status": "open",
-   "exit_date": null,
-   "exit_price": null,
-   "exit_reason": null,
-   "pnl_pct": null,
-   "half_booked": false
-  },
-  {
-   "date": "2026-09-06",
    "category": "F&O",
    "symbol": "HAVELLS",
    "side": "SHORT",
@@ -854,23 +837,6 @@
    "t1": 5341.6,
    "t2": 5584.4,
    "score": 74.0,
-   "status": "open",
-   "exit_date": null,
-   "exit_price": null,
-   "exit_reason": null,
-   "pnl_pct": null,
-   "half_booked": false
-  },
-  {
-   "date": "2026-09-06",
-   "category": "Investment",
-   "symbol": "CDSL",
-   "side": "LONG",
-   "entry": 1394.6,
-   "sl": 1324.87,
-   "t1": 1534.06,
-   "t2": 1603.79,
-   "score": 70.0,
    "status": "open",
    "exit_date": null,
    "exit_price": null,
