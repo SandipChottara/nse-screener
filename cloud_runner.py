@@ -17,12 +17,190 @@ The app shows that state honestly instead of pretending F&O is empty.
 """
 
 import json, os, sys, traceback
-from datetime import datetime
+from datetime import datetime, timedelta
+import pandas as pd
 
 sys.argv = ["cloud_runner"]  # keep v5's arg handling quiet
 import nse_momentum_screener as v5
 
 OUT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "data.json")
+HIST_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "history.json")
+HIST_WINDOW_DAYS = 45   # keep a bit more than 30 so the 30-day view is always full
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  TRACK RECORD — rolling history of every pick, with realized / unrealized P&L
+#
+#  HOW IT WORKS: each run appends today's picks (one entry per symbol per
+#  category, no duplicates while a position is still open), then re-checks
+#  every open position against actual daily High/Low bars since entry to see
+#  if Stop Loss or Target was hit. Exits are marked realized; anything still
+#  running is marked unrealized and marked-to-market at the latest close.
+#
+#  HONEST LIMITATION: history only accumulates from the first run onward --
+#  it cannot be backfilled, because knowing what WOULD have been picked on a
+#  past date requires re-scoring that date (that's what backtest_screener.py
+#  does separately). So the first few days will look sparse; a full 30-day
+#  window takes about six trading weeks to fill.
+#
+#  Exit rules mirror the live SL/Target: -5% stop, +10% Target 1 (books half,
+#  stop moves to breakeven), +15% Target 2. Checked against daily High/Low,
+#  not just closes, so an intraday stop-out is caught.
+# ─────────────────────────────────────────────────────────────────────────────
+
+#  Which category wins when the same stock qualifies in more than one on the
+#  same day. F&O first (it has the tightest, fastest-resolving exits and needs
+#  the OI confirmation to still be valid), then Swing, then Investment. Change
+#  this order if you'd rather a dual-qualifying stock be logged as a long-term
+#  investment than a short-term trade.
+CATEGORY_PRIORITY = ("F&O", "Swing", "Investment")
+PICKS_PER_CATEGORY = 3
+
+
+def CATEGORY_PRIORITY_LISTS(fno, tier_a, tier_b):
+    by_name = {"F&O": fno, "Swing": tier_a, "Investment": tier_b}
+    return [(c, by_name[c][:PICKS_PER_CATEGORY]) for c in CATEGORY_PRIORITY]
+
+
+def load_history():
+    if os.path.exists(HIST_PATH):
+        try:
+            with open(HIST_PATH, encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {"picks": []}
+
+
+def update_track_record(fno, tier_a, tier_b, results_by_sym):
+    """Append today's picks, then mark every open position to market."""
+    import yfinance as yf
+    hist = load_history()
+    picks = hist.get("picks", [])
+    today = datetime.utcnow().strftime("%Y-%m-%d")
+
+    # A stock is held ONCE, not once per category -- you'd only buy it one time.
+    # So dedup is by symbol across every category, and against anything already
+    # open. When the same stock qualifies in more than one category on the same
+    # day, the first category in CATEGORY_PRIORITY below wins and the others
+    # skip it. That means the recorded list is often shorter than 9 -- which is
+    # correct: it mirrors what you'd actually buy.
+    # One-time cleanup: files written before the cross-category dedup fix can
+    # contain the same symbol under two categories on the same date. Keep the
+    # highest-priority one and drop the rest.
+    _prio = {c: i for i, c in enumerate(CATEGORY_PRIORITY)}
+    _seen, _clean, _removed = set(), [], 0
+    for p in sorted(picks, key=lambda x: (x["date"], _prio.get(x["category"], 9))):
+        key = (p["symbol"], p["date"])
+        if key in _seen:
+            _removed += 1
+            continue
+        _seen.add(key)
+        _clean.append(p)
+    if _removed:
+        print(f"  Cleaned {_removed} duplicate entries from earlier runs")
+    picks = _clean
+
+    held = {p["symbol"] for p in picks if p["status"] == "open"}
+    taken_today = set()
+    for cat, lst in CATEGORY_PRIORITY_LISTS(fno, tier_a, tier_b):
+        for r in lst:
+            sym = r["Symbol"]
+            if sym in held or sym in taken_today:
+                continue
+            taken_today.add(sym)
+            entry = r["CMP"]
+            picks.append({
+                "date": today, "category": cat, "symbol": sym,
+                "entry": safe(entry),
+                "sl": safe(entry * (1 - v5.CONFIG["stop_loss_pct"] / 100)),
+                "t1": safe(entry * (1 + v5.CONFIG["target1_pct"] / 100)),
+                "t2": safe(entry * (1 + v5.CONFIG["target2_pct"] / 100)),
+                "score": safe(r.get("tech_score", r["LONG SCORE"])),
+                "status": "open", "exit_date": None, "exit_price": None,
+                "exit_reason": None, "pnl_pct": None, "half_booked": False,
+            })
+
+    # drop anything older than the window so the file doesn't grow forever
+    cutoff = (datetime.utcnow() - timedelta(days=HIST_WINDOW_DAYS * 2)).strftime("%Y-%m-%d")
+    picks = [p for p in picks if p["date"] >= cutoff]
+
+    # mark open positions to market against real daily bars
+    open_syms = sorted({p["symbol"] for p in picks if p["status"] == "open"})
+    bars = {}
+    for sym in open_syms:
+        try:
+            df = yf.Ticker(f"{sym}.NS").history(period="3mo", interval="1d", auto_adjust=True)
+            if df is not None and len(df):
+                df.index = pd.to_datetime(df.index).tz_localize(None)
+                bars[sym] = df
+        except Exception:
+            pass
+
+    for p in picks:
+        if p["status"] != "open":
+            continue
+        df = bars.get(p["symbol"])
+        if df is None or not len(df):
+            continue
+        entry_dt = pd.to_datetime(p["date"])
+        after = df[df.index >= entry_dt]
+        if not len(after):
+            continue
+
+        entry, sl, t1, t2 = p["entry"], p["sl"], p["t1"], p["t2"]
+        half = p.get("half_booked", False)
+        closed = False
+        for dt, row in after.iterrows():
+            if not half:
+                if row["Low"] <= sl:
+                    p.update(status="closed", exit_date=dt.strftime("%Y-%m-%d"),
+                             exit_price=safe(sl), exit_reason="Stop Loss",
+                             pnl_pct=safe((sl - entry) / entry * 100))
+                    closed = True; break
+                if row["High"] >= t1:
+                    half = True; p["half_booked"] = True; sl = entry  # stop to breakeven
+            else:
+                if row["Low"] <= sl:
+                    p.update(status="closed", exit_date=dt.strftime("%Y-%m-%d"),
+                             exit_price=safe(sl),
+                             exit_reason="Target 1 hit, rest exited at breakeven",
+                             pnl_pct=safe(((t1 - entry) * 0.5 + (sl - entry) * 0.5) / entry * 100))
+                    closed = True; break
+                if row["High"] >= t2:
+                    p.update(status="closed", exit_date=dt.strftime("%Y-%m-%d"),
+                             exit_price=safe(t2), exit_reason="Target 2",
+                             pnl_pct=safe(((t1 - entry) * 0.5 + (t2 - entry) * 0.5) / entry * 100))
+                    closed = True; break
+        if not closed:
+            last = float(after["Close"].iloc[-1])
+            p["current"] = safe(last)
+            p["pnl_pct"] = safe((last - entry) / entry * 100)
+            p["days_held"] = (datetime.utcnow() - pd.to_datetime(p["date"]).to_pydatetime()).days
+
+    hist["picks"] = picks
+    hist["updated_at"] = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    with open(HIST_PATH, "w", encoding="utf-8") as f:
+        json.dump(hist, f, indent=1, ensure_ascii=False)
+
+    # build a 30-trading-day summary for the app
+    recent_cut = (datetime.utcnow() - timedelta(days=44)).strftime("%Y-%m-%d")
+    recent = [p for p in picks if p["date"] >= recent_cut]
+    summary = {}
+    for cat in ("F&O", "Swing", "Investment"):
+        c = [p for p in recent if p["category"] == cat]
+        closed = [p for p in c if p["status"] == "closed" and p["pnl_pct"] is not None]
+        openp = [p for p in c if p["status"] == "open" and p["pnl_pct"] is not None]
+        wins = [p for p in closed if p["pnl_pct"] > 0]
+        summary[cat] = {
+            "total": len(c), "closed": len(closed), "open": len(openp),
+            "realized_avg": safe(sum(p["pnl_pct"] for p in closed) / len(closed)) if closed else None,
+            "unrealized_avg": safe(sum(p["pnl_pct"] for p in openp) / len(openp)) if openp else None,
+            "win_rate": safe(len(wins) / len(closed) * 100) if closed else None,
+        }
+    return summary, sorted(recent, key=lambda p: (p["date"], p["symbol"]), reverse=True)
+
+
 TOP_N = 10  # how many per category to publish to the app
 
 
@@ -207,6 +385,18 @@ def main():
                       "pe5y": safe(r.get("pe_5y_median"))})
         return d
 
+    print("\n[5/5] Updating 30-day track record...")
+    try:
+        results_by_sym = {r["Symbol"]: r for r in results}
+        track_summary, track_picks = update_track_record(fno, tier_a, tier_b, results_by_sym)
+        closed_n = sum(s["closed"] for s in track_summary.values())
+        open_n = sum(s["open"] for s in track_summary.values())
+        print(f"  Track record: {closed_n} closed, {open_n} open positions")
+    except Exception as e:
+        print(f"  Track record update failed (non-fatal): {e}")
+        track_summary, track_picks = {}, []
+        notes.append("Track record could not be updated this run.")
+
     payload = {
         "generated_at": datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
         "universe_scanned": len(results),
@@ -215,6 +405,8 @@ def main():
         "fno": [pack(r, "fno") for r in fno],
         "tier_a": [pack(r, "a") for r in tier_a],
         "tier_b": [pack(r, "b") for r in tier_b],
+        "track_summary": track_summary,
+        "track_picks": track_picks[:120],
     }
 
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
