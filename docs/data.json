@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-06 07:20 UTC",
+ "generated_at": "2026-09-06 07:46 UTC",
  "universe_scanned": 500,
  "fno_universe": 210,
  "notes": [],
@@ -15,6 +15,13 @@
    "sl": 1106.75,
    "t1": 1281.5,
    "t2": 1339.75,
+   "why": [
+    "F&O flow: Bullish",
+    "Confidence: MEDIUM-HIGH",
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 59 — in the healthy entry zone"
+   ],
    "action": "🟢 STRONG BUY",
    "confidence": "⭐⭐ MEDIUM-HIGH",
    "trend": "✅ BULLISH",
@@ -31,6 +38,13 @@
    "sl": 958.08,
    "t1": 1109.35,
    "t2": 1159.77,
+   "why": [
+    "F&O flow: Bullish",
+    "Confidence: MEDIUM",
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 51 — in the healthy entry zone"
+   ],
    "action": "🔵 BUY",
    "confidence": "⭐⭐ MEDIUM",
    "trend": "✅ BULLISH",
@@ -47,6 +61,12 @@
    "sl": 403.28,
    "t1": 466.95,
    "t2": 488.17,
+   "why": [
+    "F&O flow: Bullish",
+    "Confidence: MEDIUM",
+    "Chart pattern: 📈 Higher Lows",
+    "Trend: Strong Uptrend ↑↑"
+   ],
    "action": "🔵 BUY",
    "confidence": "⭐⭐ MEDIUM",
    "trend": "✅ BULLISH",
@@ -63,6 +83,13 @@
    "sl": 533.95,
    "t1": 618.26,
    "t2": 646.36,
+   "why": [
+    "F&O flow: Bullish",
+    "Confidence: MEDIUM",
+    "Chart pattern: 📈 Higher Lows",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 73 — overbought, may pull back first"
+   ],
    "action": "🔵 BUY",
    "confidence": "⭐⭐ MEDIUM",
    "trend": "✅ BULLISH",
@@ -79,6 +106,13 @@
    "sl": 393.63,
    "t1": 455.79,
    "t2": 476.5,
+   "why": [
+    "F&O flow: Bullish",
+    "Confidence: MEDIUM",
+    "Chart pattern: 📈 Higher Lows",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 73 — overbought, may pull back first"
+   ],
    "action": "🔵 BUY",
    "confidence": "⭐⭐ MEDIUM",
    "trend": "✅ BULLISH",
@@ -95,6 +129,13 @@
    "sl": 2094.75,
    "t1": 2425.5,
    "t2": 2535.75,
+   "why": [
+    "F&O flow: Bullish",
+    "Confidence: MEDIUM",
+    "Chart pattern: 📈 Higher Lows",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 56 — in the healthy entry zone"
+   ],
    "action": "🔵 BUY",
    "confidence": "⭐⭐ MEDIUM",
    "trend": "✅ BULLISH",
@@ -111,6 +152,13 @@
    "sl": 384.66,
    "t1": 445.39,
    "t2": 465.63,
+   "why": [
+    "F&O flow: Bullish",
+    "Confidence: MEDIUM",
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 50 — in the healthy entry zone"
+   ],
    "action": "🔵 BUY",
    "confidence": "⭐⭐ MEDIUM",
    "trend": "✅ BULLISH",
@@ -129,6 +177,14 @@
    "sl": 2137.5,
    "t1": 2475.0,
    "t2": 2587.5,
+   "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "ROE 25% — passed the quality gate",
+    "P/E 51 vs its own 5-year average of 52 — cheaper than usual",
+    "Market cap Rs 62,473 Cr",
+    "Trades ~Rs 154 Cr/day — liquid enough to exit"
+   ],
    "roe": 25.41,
    "buildup": true
   },
@@ -143,6 +199,15 @@
    "sl": 3111.63,
    "t1": 3602.94,
    "t2": 3766.71,
+   "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 61 — in the healthy entry zone",
+    "ROE 56% — passed the quality gate",
+    "P/E 54 vs its own 5-year average of 60 — cheaper than usual",
+    "Market cap Rs 83,520 Cr",
+    "Trades ~Rs 936 Cr/day — liquid enough to exit"
+   ],
    "roe": 56.26,
    "buildup": true
   },
@@ -157,6 +222,15 @@
    "sl": 4613.2,
    "t1": 5341.6,
    "t2": 5584.4,
+   "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 53 — in the healthy entry zone",
+    "ROE 24% — passed the quality gate",
+    "P/E 35 vs 5-year average 30 — richer than usual",
+    "Market cap Rs 324,757 Cr",
+    "Trades ~Rs 440 Cr/day — liquid enough to exit"
+   ],
    "roe": 23.97,
    "buildup": false
   },
@@ -171,6 +245,15 @@
    "sl": 1324.87,
    "t1": 1534.06,
    "t2": 1603.79,
+   "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 56 — in the healthy entry zone",
+    "ROE 25% — passed the quality gate",
+    "P/E 62 vs 5-year average 56 — richer than usual",
+    "Market cap Rs 29,147 Cr",
+    "Trades ~Rs 178 Cr/day — liquid enough to exit"
+   ],
    "roe": 24.53,
    "buildup": false
   },
@@ -185,6 +268,15 @@
    "sl": 805.88,
    "t1": 933.13,
    "t2": 975.54,
+   "why": [
+    "Chart pattern: 📈 Higher Lows",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 52 — in the healthy entry zone",
+    "ROE 14% — passed the quality gate",
+    "P/E 32 vs 5-year average 24 — richer than usual",
+    "Market cap Rs 21,021 Cr",
+    "Trades ~Rs 56 Cr/day — liquid enough to exit"
+   ],
    "roe": 13.75,
    "buildup": false
   },
@@ -199,6 +291,15 @@
    "sl": 570.95,
    "t1": 661.1,
    "t2": 691.15,
+   "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 56 — in the healthy entry zone",
+    "ROE 76% — passed the quality gate",
+    "P/E 15 vs its own 5-year average of 16 — cheaper than usual",
+    "Market cap Rs 253,942 Cr",
+    "Trades ~Rs 414 Cr/day — liquid enough to exit"
+   ],
    "roe": 76.38,
    "buildup": false
   },
@@ -213,6 +314,14 @@
    "sl": 2670.26,
    "t1": 3091.88,
    "t2": 3232.42,
+   "why": [
+    "Chart pattern: 📈 Higher Lows",
+    "Trend: Strong Uptrend ↑↑",
+    "ROE 21% — passed the quality gate",
+    "P/E 32 vs 5-year average 23 — richer than usual",
+    "Market cap Rs 21,365 Cr",
+    "Trades ~Rs 72 Cr/day — liquid enough to exit"
+   ],
    "roe": 20.62,
    "buildup": false
   },
@@ -227,6 +336,15 @@
    "sl": 610.0,
    "t1": 706.31,
    "t2": 738.42,
+   "why": [
+    "Chart pattern: 📈 Higher Lows",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 61 — in the healthy entry zone",
+    "ROE 19% — passed the quality gate",
+    "P/E 44 vs its own 5-year average of 51 — cheaper than usual",
+    "Market cap Rs 20,349 Cr",
+    "Trades ~Rs 58 Cr/day — liquid enough to exit"
+   ],
    "roe": 19.0,
    "buildup": false
   },
@@ -241,6 +359,14 @@
    "sl": 1867.04,
    "t1": 2161.83,
    "t2": 2260.09,
+   "why": [
+    "Chart pattern: ⚡ Inside Bar",
+    "Trend: Strong Uptrend ↑↑",
+    "ROE 16% — passed the quality gate",
+    "P/E 36 vs its own 5-year average of 38 — cheaper than usual",
+    "Market cap Rs 49,860 Cr",
+    "Trades ~Rs 142 Cr/day — liquid enough to exit"
+   ],
    "roe": 15.7,
    "buildup": false
   },
@@ -255,6 +381,15 @@
    "sl": 8129.62,
    "t1": 9413.25,
    "t2": 9841.12,
+   "why": [
+    "Chart pattern: 📈 Higher Lows",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 60 — in the healthy entry zone",
+    "ROE 20% — passed the quality gate",
+    "P/E 55 vs its own 5-year average of 71 — cheaper than usual",
+    "Market cap Rs 43,912 Cr",
+    "Trades ~Rs 122 Cr/day — liquid enough to exit"
+   ],
    "roe": 19.64,
    "buildup": false
   }
@@ -271,6 +406,16 @@
    "sl": 435.29,
    "t1": 504.02,
    "t2": 526.93,
+   "why": [
+    "Chart pattern: 📈 Higher Lows",
+    "Trend: Medium Uptrend ↑",
+    "RSI 50 — in the healthy entry zone",
+    "ROE 34% — passed the quality gate",
+    "P/E 23 vs its own 5-year average of 38 — cheaper than usual",
+    "Market cap Rs 168,741 Cr",
+    "Trades ~Rs 391 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (76/100) weighted 65%, technicals (37/100) 35%"
+   ],
    "blended": 62.3,
    "fund": 75.93,
    "roe": 34.02,
@@ -288,6 +433,16 @@
    "sl": 3111.63,
    "t1": 3602.94,
    "t2": 3766.71,
+   "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 61 — in the healthy entry zone",
+    "ROE 56% — passed the quality gate",
+    "P/E 54 vs its own 5-year average of 60 — cheaper than usual",
+    "Market cap Rs 83,520 Cr",
+    "Trades ~Rs 936 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (50/100) weighted 65%, technicals (80/100) 35%"
+   ],
    "blended": 60.44,
    "fund": 49.91,
    "roe": 56.26,
@@ -305,6 +460,15 @@
    "sl": 2137.5,
    "t1": 2475.0,
    "t2": 2587.5,
+   "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "ROE 25% — passed the quality gate",
+    "P/E 51 vs its own 5-year average of 52 — cheaper than usual",
+    "Market cap Rs 62,473 Cr",
+    "Trades ~Rs 154 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (47/100) weighted 65%, technicals (85/100) 35%"
+   ],
    "blended": 60.42,
    "fund": 47.19,
    "roe": 25.41,
@@ -322,6 +486,16 @@
    "sl": 4613.2,
    "t1": 5341.6,
    "t2": 5584.4,
+   "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 53 — in the healthy entry zone",
+    "ROE 24% — passed the quality gate",
+    "P/E 35 vs 5-year average 30 — richer than usual",
+    "Market cap Rs 324,757 Cr",
+    "Trades ~Rs 440 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (47/100) weighted 65%, technicals (74/100) 35%"
+   ],
    "blended": 56.5,
    "fund": 47.07,
    "roe": 23.97,
@@ -339,6 +513,16 @@
    "sl": 570.95,
    "t1": 661.1,
    "t2": 691.15,
+   "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 56 — in the healthy entry zone",
+    "ROE 76% — passed the quality gate",
+    "P/E 15 vs its own 5-year average of 16 — cheaper than usual",
+    "Market cap Rs 253,942 Cr",
+    "Trades ~Rs 414 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (49/100) weighted 65%, technicals (68/100) 35%"
+   ],
    "blended": 55.46,
    "fund": 48.71,
    "roe": 76.38,
@@ -356,6 +540,16 @@
    "sl": 1324.87,
    "t1": 1534.06,
    "t2": 1603.79,
+   "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 56 — in the healthy entry zone",
+    "ROE 25% — passed the quality gate",
+    "P/E 62 vs 5-year average 56 — richer than usual",
+    "Market cap Rs 29,147 Cr",
+    "Trades ~Rs 178 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (47/100) weighted 65%, technicals (70/100) 35%"
+   ],
    "blended": 55.2,
    "fund": 47.22,
    "roe": 24.53,
@@ -373,6 +567,16 @@
    "sl": 805.88,
    "t1": 933.13,
    "t2": 975.54,
+   "why": [
+    "Chart pattern: 📈 Higher Lows",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 52 — in the healthy entry zone",
+    "ROE 14% — passed the quality gate",
+    "P/E 32 vs 5-year average 24 — richer than usual",
+    "Market cap Rs 21,021 Cr",
+    "Trades ~Rs 56 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (46/100) weighted 65%, technicals (69/100) 35%"
+   ],
    "blended": 54.26,
    "fund": 46.32,
    "roe": 13.75,
@@ -390,6 +594,15 @@
    "sl": 2959.91,
    "t1": 3427.27,
    "t2": 3583.05,
+   "why": [
+    "Trend: Downtrend ↓",
+    "RSI 34 — weak momentum",
+    "ROE 50% — passed the quality gate",
+    "P/E 73 vs its own 5-year average of 87 — cheaper than usual",
+    "Market cap Rs 110,956 Cr",
+    "Trades ~Rs 134 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (78/100) weighted 65%, technicals (8/100) 35%"
+   ],
    "blended": 53.39,
    "fund": 77.82,
    "roe": 50.47,
@@ -407,6 +620,15 @@
    "sl": 2670.26,
    "t1": 3091.88,
    "t2": 3232.42,
+   "why": [
+    "Chart pattern: 📈 Higher Lows",
+    "Trend: Strong Uptrend ↑↑",
+    "ROE 21% — passed the quality gate",
+    "P/E 32 vs 5-year average 23 — richer than usual",
+    "Market cap Rs 21,365 Cr",
+    "Trades ~Rs 72 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (47/100) weighted 65%, technicals (65/100) 35%"
+   ],
    "blended": 53.24,
    "fund": 46.91,
    "roe": 20.62,
@@ -424,6 +646,15 @@
    "sl": 1867.04,
    "t1": 2161.83,
    "t2": 2260.09,
+   "why": [
+    "Chart pattern: ⚡ Inside Bar",
+    "Trend: Strong Uptrend ↑↑",
+    "ROE 16% — passed the quality gate",
+    "P/E 36 vs its own 5-year average of 38 — cheaper than usual",
+    "Market cap Rs 49,860 Cr",
+    "Trades ~Rs 142 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (47/100) weighted 65%, technicals (65/100) 35%"
+   ],
    "blended": 53.19,
    "fund": 46.83,
    "roe": 15.7,
