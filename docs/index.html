@@ -52,6 +52,23 @@
   .whylist{display:none;margin:9px 0 0;padding:0 0 0 17px;font-size:12.5px;
     color:var(--dim);line-height:1.65}
   .whylist li{margin-bottom:4px}
+  .mh{font-size:15px;font-weight:700;color:var(--gold);margin-bottom:8px}
+  .mt{font-size:13px;font-weight:700;margin:13px 0 6px;color:#CBD8EC}
+  .mp{font-size:13px;color:var(--dim);margin:0 0 8px;line-height:1.6}
+  .mn{font-size:12px;color:#7E8DA6;margin:8px 0 0;line-height:1.55;font-style:italic}
+  .mtbl{width:100%;border-collapse:collapse;font-size:12.5px}
+  .mtbl td{padding:4px 6px;border-bottom:1px solid var(--line);color:var(--dim);vertical-align:top}
+  .mtbl td:first-child{width:46px;font-weight:700;color:#8FB4E8;text-align:right;white-space:nowrap}
+  .mtag{font-size:10px;background:rgba(224,168,0,.15);color:#F3CC5C;
+    border-radius:10px;padding:2px 7px;margin-left:6px;font-weight:600}
+  .trow{display:flex;justify-content:space-between;align-items:center;gap:10px;
+    padding:9px 0;border-bottom:1px solid var(--line)}
+  .trow:last-child{border-bottom:none}
+  .tleft{font-size:13px;line-height:1.6}
+  .tcat{font-size:10px;background:var(--card2);color:var(--dim);border-radius:9px;
+    padding:2px 7px;margin-left:7px}
+  .tdate{font-size:11.5px;color:var(--dim)}
+  .tright{font-size:16px;font-weight:700;white-space:nowrap}
   .note{background:rgba(224,168,0,.1);border:1px solid #8A6D14;color:#F3CC5C;
     border-radius:10px;padding:11px 13px;margin-bottom:11px;font-size:13px}
   .empty{text-align:center;color:var(--dim);padding:48px 24px;font-size:14px;line-height:1.6}
@@ -79,12 +96,77 @@
   <div class="tab on" data-k="fno">F&amp;O</div>
   <div class="tab" data-k="tier_a">Swing</div>
   <div class="tab" data-k="tier_b">Invest</div>
+  <div class="tab" data-k="track">Track</div>
+  <div class="tab" data-k="method">Method</div>
 </div>
 
 <div class="wrap" id="out"><div class="load"><div class="spin"></div>Loading picks…</div></div>
 
 <script>
 var DATA=null, TAB='fno';
+
+var METHOD = '<div class="card"><div class="mh">Chart timeframe</div>'+
+'<p class="mp"><b>Daily candles only</b>, 1 year of history (split &amp; dividend adjusted). No weekly or monthly charts are used anywhere. The 200 EMA on daily data is the longest-term input.</p></div>'+
+
+'<div class="card"><div class="mh">Long Score (0&ndash;100)</div>'+
+'<p class="mp">Five components, summed, capped at 100.</p>'+
+'<div class="mt">1. EMA Trend &mdash; max 25 <span class="mtag">heaviest</span></div>'+
+'<table class="mtbl"><tr><td>25</td><td>Price &gt; 20 EMA &gt; 50 EMA (strong uptrend)</td></tr>'+
+'<tr><td>15</td><td>Price &gt; 50 EMA and &gt; 200 EMA</td></tr>'+
+'<tr><td>8</td><td>Price &gt; 200 EMA only</td></tr>'+
+'<tr><td>0</td><td>Below 200 EMA</td></tr></table>'+
+'<div class="mt">2. RSI-14 &mdash; max 20</div>'+
+'<table class="mtbl"><tr><td>20</td><td>RSI 55&ndash;70 (sweet spot)</td></tr>'+
+'<tr><td>12</td><td>RSI 50&ndash;55 (recovering)</td></tr>'+
+'<tr><td>8</td><td>RSI &gt; 75 &mdash; overbought, scored <i>low on purpose</i></td></tr>'+
+'<tr><td>5</td><td>RSI 40&ndash;50 (weak)</td></tr>'+
+'<tr><td>0</td><td>RSI &lt; 40 (bearish)</td></tr></table>'+
+'<p class="mn">Note: higher RSI is deliberately not better. Chasing an extended move is how you buy the top.</p>'+
+'<div class="mt">3. Volume vs own 20-day average &mdash; max 20</div>'+
+'<table class="mtbl"><tr><td>20</td><td>2.0x or more (surge)</td></tr>'+
+'<tr><td>14</td><td>1.5&ndash;2.0x (strong)</td></tr>'+
+'<tr><td>7</td><td>1.0&ndash;1.5x (average)</td></tr>'+
+'<tr><td>0</td><td>Below 1.0x (no conviction)</td></tr></table>'+
+'<div class="mt">4. MACD 12/26/9 histogram &mdash; max 15</div>'+
+'<table class="mtbl"><tr><td>15</td><td>Fresh bullish cross today</td></tr>'+
+'<tr><td>10</td><td>Already above signal</td></tr>'+
+'<tr><td>8</td><td>Below zero but rising</td></tr>'+
+'<tr><td>0</td><td>Below signal, falling</td></tr></table>'+
+'<div class="mt">5. Chart pattern &mdash; max 15</div>'+
+'<p class="mn">Checked in this priority order &mdash; first match wins:</p>'+
+'<table class="mtbl"><tr><td>15</td><td><b>52-Week Breakout</b> &mdash; within 0.5% of 52w high + volume &gt;1.5x</td></tr>'+
+'<tr><td>15</td><td><b>EMA Pullback</b> &mdash; low touched within 1.5% of 20 EMA, closed back above, closed up</td></tr>'+
+'<tr><td>12</td><td><b>Bull Flag</b> &mdash; &gt;5% rally, then 5 days coiling in a &lt;3% range</td></tr>'+
+'<tr><td>10</td><td><b>Higher Lows</b> &mdash; three consecutive rising daily lows</td></tr>'+
+'<tr><td>10</td><td><b>Inside Bar</b> &mdash; today fully inside yesterday range</td></tr>'+
+'<tr><td>0</td><td>No pattern</td></tr></table>'+
+'<p class="mn"><b>F&amp;O bonus:</b> +10 if Long Buildup (price up &ge;1% AND open interest up &ge;5% same day).</p></div>'+
+
+'<div class="card"><div class="mh">Fundamental Score (0&ndash;100)</div>'+
+'<p class="mp">Each metric is normalised against every other stock that day, then weighted:</p>'+
+'<table class="mtbl"><tr><td>20%</td><td>Return on Equity</td></tr>'+
+'<tr><td>20%</td><td>3-year Revenue growth</td></tr>'+
+'<tr><td>20%</td><td>3-year Profit growth</td></tr>'+
+'<tr><td>15%</td><td>Return on Capital Employed</td></tr>'+
+'<tr><td>15%</td><td>P/E discount vs its <i>own</i> 5-year average P/E</td></tr>'+
+'<tr><td>10%</td><td>Low debt (Debt/Equity, inverted)</td></tr></table>'+
+'<p class="mn">Missing metric? Its weight is redistributed across the ones present &mdash; a stock is never penalised for a data gap.</p></div>'+
+
+'<div class="card"><div class="mh">How each tab ranks</div>'+
+'<div class="mt">F&amp;O</div>'+
+'<p class="mp">Technical only, <b>no fundamentals</b>. STRONG BUY first, then BUY, each sorted by Long Score.<br>'+
+'STRONG BUY = score &ge;75 + bullish F&amp;O flow. BUY = score &ge;60 + bullish flow.<br>'+
+'A high technical score with <i>bearish</i> F&amp;O flow shows as AVOID, not BUY &mdash; both must agree.</p>'+
+'<div class="mt">Swing (Tier A)</div>'+
+'<p class="mp"><b>100% Long Score.</b> Fundamentals are a pass/fail gate only, never used to rank. Everything here is already fundamentally sound, so ranking is purely &ldquo;best chart setup right now&rdquo;.</p>'+
+'<div class="mt">Investment (Tier B)</div>'+
+'<p class="mp"><b>Blended = 0.65 &times; Fundamental + 0.35 &times; Long Score.</b><br>'+
+'Fundamentals dominate because the horizon is months-to-years. The 35% technical weight exists only to avoid buying a good company at a terrible moment.</p></div>'+
+
+'<div class="card"><div class="mh">Why this shape &mdash; and a caveat</div>'+
+'<p class="mp">Trend (25) and RSI (20) carry most weight because trend-following with a momentum filter is the most robust of these signals. Volume (20) guards against low-conviction moves. MACD and pattern (15 each) are timing refinements, kept smaller so no single pattern match can carry a weak stock.</p>'+
+'<p class="mn"><b>These weights are reasoned defaults, not optimised or proven.</b> Backtests so far show Tier B (fundamentals-led) performing best and F&amp;O near breakeven before costs. Treat the exact numbers as a starting framework to tune, not settled truth.</p></div>';
+
 
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){
   return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
@@ -136,8 +218,49 @@ function tog(id,el){
   el.querySelector('.arw').textContent=open?'▾':'▴';
 }
 
+
+function pnlCls(v){return v==null?'':(v>0?'up':(v<0?'down':''));}
+function pnlTxt(v){return v==null?'—':(v>0?'+':'')+v.toFixed(1)+'%';}
+
+function trackHtml(){
+  if(!DATA) return '';
+  var s=DATA.track_summary||{}, ps=DATA.track_picks||[];
+  var h='<div class="card"><div class="mh">Last 30 days &mdash; how the picks actually did</div>'+
+    '<p class="mn">Realized = position closed via stop or target. Unrealized = still running, marked to the latest close. Exits use the same &minus;5% stop / +10% Target&nbsp;1 (books half, stop to breakeven) / +15% Target&nbsp;2 rules, checked against daily highs and lows.</p></div>';
+
+  var cats=['F&O','Swing','Investment'], any=false;
+  cats.forEach(function(c){
+    var d=s[c]; if(!d||!d.total) return; any=true;
+    h+='<div class="card"><div class="row1"><div class="sym">'+esc(c)+'</div>'+
+       '<div class="price" style="font-size:12px;color:var(--dim)">'+d.total+' picks</div></div>'+
+       '<div class="lv"><div><div class="k">Realized avg</div><div class="v '+pnlCls(d.realized_avg)+'">'+pnlTxt(d.realized_avg)+'</div></div>'+
+       '<div><div class="k">Unrealized avg</div><div class="v '+pnlCls(d.unrealized_avg)+'">'+pnlTxt(d.unrealized_avg)+'</div></div>'+
+       '<div><div class="k">Win rate</div><div class="v">'+(d.win_rate==null?'—':d.win_rate.toFixed(0)+'%')+'</div></div></div>'+
+       '<p class="mn" style="margin-top:8px">'+d.closed+' closed &middot; '+d.open+' still open</p></div>';
+  });
+
+  if(!any){
+    return h+'<div class="empty">No track record yet.<br><br>History starts building from the first run &mdash; it can\'t be backfilled, because knowing what would have been picked on a past date means re-scoring that date.<br><br>Check back after a few trading days.</div>';
+  }
+
+  h+='<div class="card"><div class="mh">Every pick, newest first</div>';
+  if(!ps.length){ h+='<p class="mn">No picks recorded yet.</p>'; }
+  ps.forEach(function(p){
+    var st=p.status==='closed'
+      ? '<span class="b">'+esc(p.exit_reason||'closed')+'</span>'
+      : '<span class="b gold">open'+(p.days_held?' &middot; '+p.days_held+'d':'')+'</span>';
+    h+='<div class="trow"><div class="tleft"><b>'+esc(p.symbol)+'</b>'+
+       '<span class="tcat">'+esc(p.category)+'</span><br>'+
+       '<span class="tdate">'+esc(p.date)+' @ &#8377;'+num(p.entry)+'</span><br>'+st+'</div>'+
+       '<div class="tright '+pnlCls(p.pnl_pct)+'">'+pnlTxt(p.pnl_pct)+'</div></div>';
+  });
+  return h+'</div>';
+}
+
 function render(){
   var out=document.getElementById('out');
+  if(TAB==='method'){out.innerHTML=METHOD;window.scrollTo(0,0);return;}
+  if(TAB==='track'){out.innerHTML=trackHtml();window.scrollTo(0,0);return;}
   if(!DATA){return;}
   var list=DATA[TAB]||[], h='';
   (DATA.notes||[]).forEach(function(n){h+='<div class="note">⚠️ '+esc(n)+'</div>';});
