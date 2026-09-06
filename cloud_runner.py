@@ -58,8 +58,9 @@ PICKS_PER_CATEGORY = 3
 
 
 def CATEGORY_PRIORITY_LISTS(fno, tier_a, tier_b):
+    # fno here is the COMBINED long+short list, already ranked together
     by_name = {"F&O": fno, "Swing": tier_a, "Investment": tier_b}
-    return [(c, by_name[c][:PICKS_PER_CATEGORY]) for c in CATEGORY_PRIORITY]
+    return [(c, by_name[c]) for c in CATEGORY_PRIORITY]
 
 
 def load_history():
@@ -72,7 +73,7 @@ def load_history():
     return {"picks": []}
 
 
-def update_track_record(fno, tier_a, tier_b, results_by_sym):
+def update_track_record(fno, tier_a, tier_b, results_by_sym, fno_short_or_none=None):
     """Append today's picks, then mark every open position to market."""
     import yfinance as yf
     hist = load_history()
@@ -99,24 +100,70 @@ def update_track_record(fno, tier_a, tier_b, results_by_sym):
         _clean.append(p)
     if _removed:
         print(f"  Cleaned {_removed} duplicate entries from earlier runs")
-    picks = _clean
+
+    # Trim dates that exceeded the cap from repeat runs before this was fixed.
+    _bycat, _trimmed, _kept = {}, 0, []
+    for p in _clean:
+        k = (p["date"], p["category"])
+        _bycat[k] = _bycat.get(k, 0) + 1
+        if _bycat[k] > PICKS_PER_CATEGORY:
+            _trimmed += 1
+            continue
+        _kept.append(p)
+    if _trimmed:
+        print(f"  Trimmed {_trimmed} entries over the {PICKS_PER_CATEGORY}/day cap")
+    picks = _kept
 
     held = {p["symbol"] for p in picks if p["status"] == "open"}
     taken_today = set()
+    # Count what today already logged per category. Without this, a second run
+    # on the same day adds 3 more (the old code only checked "already open?",
+    # not "how many today?"), pushing a single date past the cap.
+    already_today = {}
+    for p in picks:
+        if p["date"] == today:
+            already_today[p["category"]] = already_today.get(p["category"], 0) + 1
+
+    # Defensive: merge F&O shorts into one list so long+short share ONE cap of
+    # 3, not 3 each -- guards against any caller passing them separately.
+    if fno_short_or_none:
+        for r in fno:
+            r.setdefault("fo_side", "LONG")
+            r.setdefault("fo_rank_score", r.get("LONG SCORE", 0))
+        for r in fno_short_or_none:
+            r["fo_side"] = "SHORT"
+            r["fo_rank_score"] = r.get("SHORT SCORE", 0)
+        fno = sorted(list(fno) + list(fno_short_or_none),
+                     key=lambda r: -r.get("fo_rank_score", 0))
+
     for cat, lst in CATEGORY_PRIORITY_LISTS(fno, tier_a, tier_b):
+        room = PICKS_PER_CATEGORY - already_today.get(cat, 0)
+        if room <= 0:
+            continue
         for r in lst:
+            if room <= 0:
+                break
             sym = r["Symbol"]
             if sym in held or sym in taken_today:
                 continue
-            taken_today.add(sym)
+            taken_today.add(sym); room -= 1
             entry = r["CMP"]
+            short = r.get("fo_side") == "SHORT"
+            if short:   # stop ABOVE entry, targets BELOW
+                sl = entry * (1 + v5.CONFIG["short_sl_pct"] / 100)
+                t1 = entry * (1 - v5.CONFIG["short_target1_pct"] / 100)
+                t2 = entry * (1 - v5.CONFIG["short_target2_pct"] / 100)
+                sc = r["SHORT SCORE"]
+            else:
+                sl = entry * (1 - v5.CONFIG["stop_loss_pct"] / 100)
+                t1 = entry * (1 + v5.CONFIG["target1_pct"] / 100)
+                t2 = entry * (1 + v5.CONFIG["target2_pct"] / 100)
+                sc = r.get("tech_score", r["LONG SCORE"])
             picks.append({
                 "date": today, "category": cat, "symbol": sym,
-                "entry": safe(entry),
-                "sl": safe(entry * (1 - v5.CONFIG["stop_loss_pct"] / 100)),
-                "t1": safe(entry * (1 + v5.CONFIG["target1_pct"] / 100)),
-                "t2": safe(entry * (1 + v5.CONFIG["target2_pct"] / 100)),
-                "score": safe(r.get("tech_score", r["LONG SCORE"])),
+                "side": "SHORT" if short else "LONG",
+                "entry": safe(entry), "sl": safe(sl), "t1": safe(t1), "t2": safe(t2),
+                "score": safe(sc),
                 "status": "open", "exit_date": None, "exit_price": None,
                 "exit_reason": None, "pnl_pct": None, "half_booked": False,
             })
@@ -149,33 +196,44 @@ def update_track_record(fno, tier_a, tier_b, results_by_sym):
             continue
 
         entry, sl, t1, t2 = p["entry"], p["sl"], p["t1"], p["t2"]
+        is_short = p.get("side") == "SHORT"
         half = p.get("half_booked", False)
         closed = False
+
+        # Shorts profit when price FALLS: stop is breached by a HIGH above it,
+        # targets by a LOW below them, and P&L is (entry - exit) not (exit - entry).
+        def pnl(x):
+            return safe(((entry - x) if is_short else (x - entry)) / entry * 100)
+        def hit_stop(row, lvl):
+            return row["High"] >= lvl if is_short else row["Low"] <= lvl
+        def hit_tgt(row, lvl):
+            return row["Low"] <= lvl if is_short else row["High"] >= lvl
+
         for dt, row in after.iterrows():
             if not half:
-                if row["Low"] <= sl:
+                if hit_stop(row, sl):
                     p.update(status="closed", exit_date=dt.strftime("%Y-%m-%d"),
                              exit_price=safe(sl), exit_reason="Stop Loss",
-                             pnl_pct=safe((sl - entry) / entry * 100))
+                             pnl_pct=pnl(sl))
                     closed = True; break
-                if row["High"] >= t1:
+                if hit_tgt(row, t1):
                     half = True; p["half_booked"] = True; sl = entry  # stop to breakeven
             else:
-                if row["Low"] <= sl:
+                if hit_stop(row, sl):
                     p.update(status="closed", exit_date=dt.strftime("%Y-%m-%d"),
                              exit_price=safe(sl),
                              exit_reason="Target 1 hit, rest exited at breakeven",
-                             pnl_pct=safe(((t1 - entry) * 0.5 + (sl - entry) * 0.5) / entry * 100))
+                             pnl_pct=safe((pnl(t1) + pnl(sl)) / 2))
                     closed = True; break
-                if row["High"] >= t2:
+                if hit_tgt(row, t2):
                     p.update(status="closed", exit_date=dt.strftime("%Y-%m-%d"),
                              exit_price=safe(t2), exit_reason="Target 2",
-                             pnl_pct=safe(((t1 - entry) * 0.5 + (t2 - entry) * 0.5) / entry * 100))
+                             pnl_pct=safe((pnl(t1) + pnl(t2)) / 2))
                     closed = True; break
         if not closed:
             last = float(after["Close"].iloc[-1])
             p["current"] = safe(last)
-            p["pnl_pct"] = safe((last - entry) / entry * 100)
+            p["pnl_pct"] = pnl(last)
             p["days_held"] = (datetime.utcnow() - pd.to_datetime(p["date"]).to_pydatetime()).days
 
     hist["picks"] = picks
@@ -309,21 +367,28 @@ def main():
         tier_b = sorted(eligible, key=lambda r: r["blended_score"], reverse=True)[:TOP_N]
         print(f"  {len(eligible)} passed gate")
 
-    # ---- F&O picks ----
-    fno = []
+    # ---- F&O picks: BOTH sides. fo_final_action() already produces short
+    # signals (STRONG SHORT / SHORT) when the technical short score and the
+    # OI/PCR flow are both bearish -- they just weren't being surfaced before.
+    fno, fno_short = [], []
     for r in results:
         fo = fo_data.get(r["Symbol"]) if fo_data else None
         if not fo:
             continue
         a = v5.fo_final_action(r["LONG SCORE"], r["SHORT SCORE"], r["Day Chg %"],
                                 fo.get("today_oi"), fo.get("prev_oi"), fo.get("pcr"))
-        if a["final_action"] in ("🟢 STRONG BUY", "🔵 BUY"):
+        if a["final_action"] in ("🟢 STRONG BUY", "🔵 BUY", "🔻 STRONG SHORT", "🔽 SHORT"):
             r["fo_action"] = a["final_action"]
             r["fo_confidence"] = a["confidence"]
             r["fo_trend"] = a["fo_trend"]
-            fno.append(r)
-    fno.sort(key=lambda r: (r["fo_action"] != "🟢 STRONG BUY", -r["LONG SCORE"]))
-    fno = fno[:TOP_N]
+            (fno if "BUY" in a["final_action"] else fno_short).append(r)
+    # ONE combined ranking: longs and shorts compete on their own side's score,
+    # so the top slots go to whichever setups are genuinely strongest today.
+    for r in fno: r["fo_side"], r["fo_rank_score"] = "LONG", r["LONG SCORE"]
+    for r in fno_short: r["fo_side"], r["fo_rank_score"] = "SHORT", r["SHORT SCORE"]
+    fno_all = sorted(fno + fno_short, key=lambda r: -r["fo_rank_score"])[:TOP_N]
+    fno = [r for r in fno_all if r["fo_side"] == "LONG"]
+    fno_short = [r for r in fno_all if r["fo_side"] == "SHORT"]
 
     def build_why(r, kind):
         """Plain-English reasons, built from the actual data that drove the pick."""
@@ -377,6 +442,13 @@ def main():
         if kind == "fno":
             d.update({"action": r.get("fo_action"), "confidence": r.get("fo_confidence"),
                       "trend": r.get("fo_trend"), "buildup": bool(r.get("long_buildup"))})
+        elif kind == "fno_short":
+            # Short side: SL sits ABOVE entry, targets BELOW.
+            d.update({"action": r.get("fo_action"), "confidence": r.get("fo_confidence"),
+                      "trend": r.get("fo_trend"), "side": "short",
+                      "score": safe(r["SHORT SCORE"]), "pattern": r.get("Pattern Short"),
+                      "sl": safe(r.get("SL Short")), "t1": safe(r.get("T1 Short")),
+                      "t2": safe(r.get("T2 Short"))})
         elif kind == "a":
             d.update({"roe": safe(r.get("roe")), "buildup": bool(r.get("long_buildup"))})
         else:
@@ -388,7 +460,7 @@ def main():
     print("\n[5/5] Updating 30-day track record...")
     try:
         results_by_sym = {r["Symbol"]: r for r in results}
-        track_summary, track_picks = update_track_record(fno, tier_a, tier_b, results_by_sym)
+        track_summary, track_picks = update_track_record(fno_all, tier_a, tier_b, results_by_sym)
         closed_n = sum(s["closed"] for s in track_summary.values())
         open_n = sum(s["open"] for s in track_summary.values())
         print(f"  Track record: {closed_n} closed, {open_n} open positions")
@@ -403,6 +475,7 @@ def main():
         "fno_universe": len(fo_universe),
         "notes": notes,
         "fno": [pack(r, "fno") for r in fno],
+        "fno_short": [pack(r, "fno_short") for r in fno_short],
         "tier_a": [pack(r, "a") for r in tier_a],
         "tier_b": [pack(r, "b") for r in tier_b],
         "track_summary": track_summary,
