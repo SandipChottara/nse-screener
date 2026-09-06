@@ -1,0 +1,36 @@
+name: Run NSE Screener
+
+on:
+  schedule:
+    # 13:15 UTC = 18:45 IST (after NSE publishes Bhavcopy ~17:30 IST), Mon-Fri
+    - cron: '15 13 * * 1-5'
+  workflow_dispatch:        # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install yfinance pandas numpy openpyxl requests
+
+      - name: Run screener
+        run: python cloud_runner.py
+
+      - name: Commit results
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data.json
+          git diff --staged --quiet || git commit -m "Screener run $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
