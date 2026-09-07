@@ -14,8 +14,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
-   "half_booked": false
+   "pnl_pct": 1.19,
+   "half_booked": false,
+   "current": 117.5,
+   "days_held": 1
   },
   {
    "date": "2026-09-06",
@@ -31,8 +33,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
-   "half_booked": false
+   "pnl_pct": 0.35,
+   "half_booked": false,
+   "current": 1150.0,
+   "days_held": 1
   },
   {
    "date": "2026-09-06",
@@ -48,8 +52,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
-   "half_booked": false
+   "pnl_pct": -1.47,
+   "half_booked": false,
+   "current": 1147.9,
+   "days_held": 1
   },
   {
    "date": "2026-09-06",
@@ -65,8 +71,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
-   "half_booked": false
+   "pnl_pct": -1.56,
+   "half_booked": false,
+   "current": 2215.0,
+   "days_held": 1
   },
   {
    "date": "2026-09-06",
@@ -82,8 +90,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
-   "half_booked": false
+   "pnl_pct": 1.67,
+   "half_booked": false,
+   "current": 3330.2,
+   "days_held": 1
   },
   {
    "date": "2026-09-06",
@@ -99,8 +109,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
-   "half_booked": false
+   "pnl_pct": -0.02,
+   "half_booked": false,
+   "current": 4855.2,
+   "days_held": 1
   },
   {
    "date": "2026-09-06",
@@ -116,9 +128,125 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
-   "half_booked": false
+   "pnl_pct": 0.32,
+   "half_booked": false,
+   "current": 459.65,
+   "days_held": 1
+  },
+  {
+   "date": "2026-09-07",
+   "category": "F&O",
+   "symbol": "RVNL",
+   "side": "SHORT",
+   "entry": 210.05,
+   "sl": 218.45,
+   "t1": 193.25,
+   "t2": 184.84,
+   "score": 85.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": -0.0,
+   "half_booked": false,
+   "current": 210.05,
+   "days_held": 0
+  },
+  {
+   "date": "2026-09-07",
+   "category": "F&O",
+   "symbol": "DABUR",
+   "side": "SHORT",
+   "entry": 375.5,
+   "sl": 390.52,
+   "t1": 345.46,
+   "t2": 330.44,
+   "score": 84.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": 0.0,
+   "half_booked": false,
+   "current": 375.5,
+   "days_held": 0
+  },
+  {
+   "date": "2026-09-07",
+   "category": "F&O",
+   "symbol": "KEI",
+   "side": "SHORT",
+   "entry": 4704.0,
+   "sl": 4892.16,
+   "t1": 4327.68,
+   "t2": 4139.52,
+   "score": 75.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": 0.0,
+   "half_booked": false,
+   "current": 4704.0,
+   "days_held": 0
+  },
+  {
+   "date": "2026-09-07",
+   "category": "Swing",
+   "symbol": "GRANULES",
+   "side": "LONG",
+   "entry": 867.3,
+   "sl": 823.93,
+   "t1": 954.03,
+   "t2": 997.39,
+   "score": 89.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": -0.0,
+   "half_booked": false,
+   "current": 867.3,
+   "days_held": 0
+  },
+  {
+   "date": "2026-09-07",
+   "category": "Swing",
+   "symbol": "CDSL",
+   "side": "LONG",
+   "entry": 1414.9,
+   "sl": 1344.15,
+   "t1": 1556.39,
+   "t2": 1627.13,
+   "score": 84.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": 0.0,
+   "half_booked": false,
+   "current": 1414.9,
+   "days_held": 0
+  },
+  {
+   "date": "2026-09-07",
+   "category": "Swing",
+   "symbol": "CGPOWER",
+   "side": "LONG",
+   "entry": 895.0,
+   "sl": 850.25,
+   "t1": 984.5,
+   "t2": 1029.25,
+   "score": 76.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": 0.0,
+   "half_booked": false,
+   "current": 895.0,
+   "days_held": 0
   }
  ],
- "updated_at": "2026-09-06 15:35 UTC"
+ "updated_at": "2026-09-07 13:32 UTC"
 }
