@@ -14,10 +14,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 4.63,
+   "pnl_pct": 2.9,
    "half_booked": false,
-   "current": 113.4,
-   "days_held": 11
+   "current": 115.46,
+   "days_held": 12
   },
   {
    "date": "2026-09-06",
@@ -33,10 +33,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 5.37,
+   "pnl_pct": 1.87,
    "half_booked": false,
-   "current": 1092.0,
-   "days_held": 11
+   "current": 1132.4,
+   "days_held": 12
   },
   {
    "date": "2026-09-06",
@@ -109,10 +109,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -1.4,
+   "pnl_pct": -1.15,
    "half_booked": false,
-   "current": 4788.0,
-   "days_held": 11
+   "current": 4800.3,
+   "days_held": 12
   },
   {
    "date": "2026-09-06",
@@ -147,10 +147,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 3.98,
+   "pnl_pct": -2.02,
    "half_booked": false,
-   "current": 201.7,
-   "days_held": 10
+   "current": 214.29,
+   "days_held": 11
   },
   {
    "date": "2026-09-07",
@@ -185,10 +185,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 3.06,
+   "pnl_pct": 1.15,
    "half_booked": false,
-   "current": 4560.0,
-   "days_held": 10
+   "current": 4650.0,
+   "days_held": 11
   },
   {
    "date": "2026-09-07",
@@ -204,10 +204,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 0.36,
+   "pnl_pct": 0.95,
    "half_booked": false,
-   "current": 870.4,
-   "days_held": 10
+   "current": 875.5,
+   "days_held": 11
   },
   {
    "date": "2026-09-07",
@@ -354,10 +354,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 2.2,
+   "pnl_pct": 0.96,
    "half_booked": false,
-   "current": 3836.2,
-   "days_held": 8
+   "current": 3885.0,
+   "days_held": 9
   },
   {
    "date": "2026-09-09",
@@ -373,10 +373,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 2.22,
+   "pnl_pct": 4.08,
    "half_booked": false,
-   "current": 12338.0,
-   "days_held": 8
+   "current": 12103.0,
+   "days_held": 9
   },
   {
    "date": "2026-09-09",
@@ -392,10 +392,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -2.07,
+   "pnl_pct": 2.76,
    "half_booked": false,
-   "current": 1738.3,
-   "days_held": 8
+   "current": 1824.0,
+   "days_held": 9
   },
   {
    "date": "2026-09-10",
@@ -411,10 +411,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -2.66,
+   "pnl_pct": -1.16,
    "half_booked": false,
-   "current": 266.2,
-   "days_held": 7
+   "current": 262.3,
+   "days_held": 8
   },
   {
    "date": "2026-09-10",
@@ -430,10 +430,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 2.94,
+   "pnl_pct": -0.5,
    "half_booked": false,
-   "current": 2473.0,
-   "days_held": 7
+   "current": 2560.7,
+   "days_held": 8
   },
   {
    "date": "2026-09-10",
@@ -551,11 +551,11 @@
    "t1": 2078.28,
    "t2": 1987.92,
    "score": 90.0,
-   "status": "open",
-   "exit_date": null,
-   "exit_price": null,
-   "exit_reason": null,
-   "pnl_pct": -2.12,
+   "status": "closed",
+   "exit_date": "2026-09-18",
+   "exit_price": 2349.36,
+   "exit_reason": "Stop Loss",
+   "pnl_pct": -4.0,
    "half_booked": false,
    "current": 2307.0,
    "days_held": 3
@@ -574,10 +574,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 3.38,
+   "pnl_pct": -1.23,
    "half_booked": false,
-   "current": 1334.3,
-   "days_held": 3
+   "current": 1398.0,
+   "days_held": 4
   },
   {
    "date": "2026-09-15",
@@ -629,10 +629,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 5.58,
+   "pnl_pct": 5.52,
    "half_booked": false,
-   "current": 400.1,
-   "days_held": 2
+   "current": 399.85,
+   "days_held": 3
   },
   {
    "date": "2026-09-15",
@@ -667,10 +667,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 2.1,
+   "pnl_pct": 3.69,
    "half_booked": false,
-   "current": 436.1,
-   "days_held": 2
+   "current": 442.9,
+   "days_held": 3
   },
   {
    "date": "2026-09-16",
@@ -686,10 +686,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -2.4,
+   "pnl_pct": -2.44,
    "half_booked": false,
-   "current": 2300.0,
-   "days_held": 1
+   "current": 2300.7,
+   "days_held": 2
   },
   {
    "date": "2026-09-16",
@@ -718,11 +718,11 @@
    "t1": 506.55,
    "t2": 484.53,
    "score": 79.0,
-   "status": "open",
-   "exit_date": null,
-   "exit_price": null,
-   "exit_reason": null,
-   "pnl_pct": -0.75,
+   "status": "closed",
+   "exit_date": "2026-09-18",
+   "exit_price": 572.62,
+   "exit_reason": "Stop Loss",
+   "pnl_pct": -4.0,
    "half_booked": false,
    "current": 554.75,
    "days_held": 1
@@ -741,10 +741,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 1.8,
+   "pnl_pct": 2.37,
    "half_booked": false,
-   "current": 9323.0,
-   "days_held": 1
+   "current": 9375.0,
+   "days_held": 2
   },
   {
    "date": "2026-09-17",
@@ -760,10 +760,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 0.0,
+   "pnl_pct": -3.17,
    "half_booked": false,
-   "current": 2210.0,
-   "days_held": 0
+   "current": 2280.0,
+   "days_held": 1
   },
   {
    "date": "2026-09-17",
@@ -779,10 +779,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 0.0,
+   "pnl_pct": -2.33,
    "half_booked": false,
-   "current": 75.2,
-   "days_held": 0
+   "current": 76.95,
+   "days_held": 1
   },
   {
    "date": "2026-09-17",
@@ -817,7 +817,98 @@
    "exit_reason": "Stop Loss",
    "pnl_pct": -5.0,
    "half_booked": false
+  },
+  {
+   "date": "2026-09-18",
+   "category": "F&O",
+   "symbol": "KPITTECH",
+   "side": "SHORT",
+   "entry": 532.0,
+   "sl": 553.28,
+   "t1": 489.44,
+   "t2": 468.16,
+   "score": 85.0,
+   "status": "closed",
+   "exit_date": "2026-09-18",
+   "exit_price": 553.28,
+   "exit_reason": "Stop Loss",
+   "pnl_pct": -4.0,
+   "half_booked": false
+  },
+  {
+   "date": "2026-09-18",
+   "category": "Swing",
+   "symbol": "ZYDUSLIFE",
+   "side": "LONG",
+   "entry": 1160.0,
+   "sl": 1102.0,
+   "t1": 1276.0,
+   "t2": 1334.0,
+   "score": 98.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": 0.0,
+   "half_booked": false,
+   "current": 1160.0,
+   "days_held": 0
+  },
+  {
+   "date": "2026-09-18",
+   "category": "Swing",
+   "symbol": "APARINDS",
+   "side": "LONG",
+   "entry": 18858.0,
+   "sl": 17915.1,
+   "t1": 20743.8,
+   "t2": 21686.7,
+   "score": 90.0,
+   "status": "closed",
+   "exit_date": "2026-09-18",
+   "exit_price": 17915.1,
+   "exit_reason": "Stop Loss",
+   "pnl_pct": -5.0,
+   "half_booked": false
+  },
+  {
+   "date": "2026-09-18",
+   "category": "Swing",
+   "symbol": "INDHOTEL",
+   "side": "LONG",
+   "entry": 732.75,
+   "sl": 696.11,
+   "t1": 806.03,
+   "t2": 842.66,
+   "score": 89.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": 0.0,
+   "half_booked": false,
+   "current": 732.75,
+   "days_held": 0
+  },
+  {
+   "date": "2026-09-18",
+   "category": "Investment",
+   "symbol": "ENRIN",
+   "side": "LONG",
+   "entry": 3228.0,
+   "sl": 3066.6,
+   "t1": 3550.8,
+   "t2": 3712.2,
+   "score": 44.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": 0.0,
+   "half_booked": false,
+   "current": 3228.0,
+   "days_held": 0
   }
  ],
- "updated_at": "2026-09-17 13:32 UTC"
+ "updated_at": "2026-09-18 13:29 UTC"
 }
