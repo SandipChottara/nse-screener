@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-01 13:37 UTC",
+ "generated_at": "2026-10-02 13:35 UTC",
  "universe_scanned": 500,
  "fno_universe": 213,
  "notes": [],
@@ -40,9 +40,9 @@
     "Trend: Downtrend ↓",
     "RSI 23 — weak momentum"
    ],
-   "action": "🔽 SHORT",
-   "confidence": "⭐⭐ MEDIUM",
-   "trend": "❌ BEARISH",
+   "action": "🔻 STRONG SHORT",
+   "confidence": "⭐⭐⭐ HIGH",
+   "trend": "❌ STRONGLY BEARISH",
    "side": "short"
   },
   {
@@ -120,9 +120,9 @@
     "Trend: Downtrend ↓",
     "RSI 21 — weak momentum"
    ],
-   "action": "🔽 SHORT",
-   "confidence": "⭐⭐ MEDIUM",
-   "trend": "❌ BEARISH",
+   "action": "🔻 STRONG SHORT",
+   "confidence": "⭐⭐⭐ HIGH",
+   "trend": "❌ STRONGLY BEARISH",
    "side": "short"
   },
   {
@@ -160,9 +160,9 @@
     "Trend: Downtrend ↓",
     "RSI 39 — weak momentum"
    ],
-   "action": "🔽 SHORT",
-   "confidence": "⭐⭐ MEDIUM",
-   "trend": "❌ BEARISH",
+   "action": "🔻 STRONG SHORT",
+   "confidence": "⭐⭐⭐ HIGH",
+   "trend": "❌ STRONGLY BEARISH",
    "side": "short"
   },
   {
@@ -207,6 +207,29 @@
   }
  ],
  "tier_a": [
+  {
+   "symbol": "ENRIN",
+   "cmp": 3334.0,
+   "chg": 4.19,
+   "score": 90.0,
+   "signal": "🟢 PRIORITY BUY",
+   "rsi": 57.3,
+   "pattern": "📉→📈 EMA Pullback",
+   "sl": 3167.3,
+   "t1": 3667.4,
+   "t2": 3834.1,
+   "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Medium Uptrend ↑",
+    "RSI 57 — in the healthy entry zone",
+    "ROE 50% — passed the quality gate",
+    "P/E 73 vs its own 5-year average of 87 — cheaper than usual",
+    "Market cap Rs 110,956 Cr",
+    "Trades ~Rs 143 Cr/day — liquid enough to exit"
+   ],
+   "roe": 50.47,
+   "buildup": true
+  },
   {
    "symbol": "TDPOWERSYS",
    "cmp": 792.15,
@@ -253,33 +276,10 @@
    "buildup": false
   },
   {
-   "symbol": "ENRIN",
-   "cmp": 3334.0,
-   "chg": 4.19,
-   "score": 80.0,
-   "signal": "🟢 PRIORITY BUY",
-   "rsi": 57.3,
-   "pattern": "📉→📈 EMA Pullback",
-   "sl": 3167.3,
-   "t1": 3667.4,
-   "t2": 3834.1,
-   "why": [
-    "Chart pattern: 📉→📈 EMA Pullback",
-    "Trend: Medium Uptrend ↑",
-    "RSI 57 — in the healthy entry zone",
-    "ROE 50% — passed the quality gate",
-    "P/E 73 vs its own 5-year average of 87 — cheaper than usual",
-    "Market cap Rs 110,956 Cr",
-    "Trades ~Rs 143 Cr/day — liquid enough to exit"
-   ],
-   "roe": 50.47,
-   "buildup": false
-  },
-  {
    "symbol": "MANKIND",
    "cmp": 2535.0,
    "chg": 1.25,
-   "score": 65.0,
+   "score": 75.0,
    "signal": "🔵 WATCHLIST BUY",
    "rsi": 62.2,
    "pattern": "⚡ Inside Bar",
@@ -296,7 +296,7 @@
     "Trades ~Rs 136 Cr/day — liquid enough to exit"
    ],
    "roe": 13.14,
-   "buildup": false
+   "buildup": true
   },
   {
    "symbol": "SYRMA",
@@ -438,7 +438,7 @@
    "symbol": "ENRIN",
    "cmp": 3334.0,
    "chg": 4.19,
-   "score": 80.0,
+   "score": 90.0,
    "signal": "🟢 PRIORITY BUY",
    "rsi": 57.3,
    "pattern": "📉→📈 EMA Pullback",
@@ -453,9 +453,9 @@
     "P/E 73 vs its own 5-year average of 87 — cheaper than usual",
     "Market cap Rs 110,956 Cr",
     "Trades ~Rs 143 Cr/day — liquid enough to exit",
-    "Ranked on fundamentals (78/100) weighted 65%, technicals (80/100) 35%"
+    "Ranked on fundamentals (78/100) weighted 65%, technicals (90/100) 35%"
    ],
-   "blended": 78.59,
+   "blended": 82.09,
    "fund": 77.82,
    "roe": 50.47,
    "pe": 72.69,
@@ -515,6 +515,33 @@
    "pe5y": 62.19
   },
   {
+   "symbol": "MANKIND",
+   "cmp": 2535.0,
+   "chg": 1.25,
+   "score": 75.0,
+   "signal": "🔵 WATCHLIST BUY",
+   "rsi": 62.2,
+   "pattern": "⚡ Inside Bar",
+   "sl": 2408.25,
+   "t1": 2788.5,
+   "t2": 2915.25,
+   "why": [
+    "Chart pattern: ⚡ Inside Bar",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 62 — in the healthy entry zone",
+    "ROE 13% — passed the quality gate",
+    "P/E 45 vs its own 5-year average of 50 — cheaper than usual",
+    "Market cap Rs 96,153 Cr",
+    "Trades ~Rs 136 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (46/100) weighted 65%, technicals (75/100) 35%"
+   ],
+   "blended": 56.44,
+   "fund": 46.44,
+   "roe": 13.14,
+   "pe": 45.09,
+   "pe5y": 50.16
+  },
+  {
    "symbol": "GABRIEL",
    "cmp": 1315.0,
    "chg": -2.0,
@@ -566,33 +593,6 @@
    "roe": 13.96,
    "pe": 75.66,
    "pe5y": 67.37
-  },
-  {
-   "symbol": "MANKIND",
-   "cmp": 2535.0,
-   "chg": 1.25,
-   "score": 65.0,
-   "signal": "🔵 WATCHLIST BUY",
-   "rsi": 62.2,
-   "pattern": "⚡ Inside Bar",
-   "sl": 2408.25,
-   "t1": 2788.5,
-   "t2": 2915.25,
-   "why": [
-    "Chart pattern: ⚡ Inside Bar",
-    "Trend: Strong Uptrend ↑↑",
-    "RSI 62 — in the healthy entry zone",
-    "ROE 13% — passed the quality gate",
-    "P/E 45 vs its own 5-year average of 50 — cheaper than usual",
-    "Market cap Rs 96,153 Cr",
-    "Trades ~Rs 136 Cr/day — liquid enough to exit",
-    "Ranked on fundamentals (46/100) weighted 65%, technicals (65/100) 35%"
-   ],
-   "blended": 52.94,
-   "fund": 46.44,
-   "roe": 13.14,
-   "pe": 45.09,
-   "pe5y": 50.16
   },
   {
    "symbol": "COFORGE",
@@ -744,7 +744,7 @@
    "pnl_pct": 0.0,
    "half_booked": false,
    "current": 792.15,
-   "days_held": 0
+   "days_held": 1
   },
   {
    "date": "2026-10-01",
@@ -763,7 +763,7 @@
    "pnl_pct": 0.0,
    "half_booked": false,
    "current": 2860.0,
-   "days_held": 0
+   "days_held": 1
   },
   {
    "date": "2026-10-01",
@@ -782,7 +782,7 @@
    "pnl_pct": 0.0,
    "half_booked": false,
    "current": 212.5,
-   "days_held": 0
+   "days_held": 1
   },
   {
    "date": "2026-09-30",
@@ -801,7 +801,7 @@
    "pnl_pct": 1.47,
    "half_booked": false,
    "current": 2340.0,
-   "days_held": 1
+   "days_held": 2
   },
   {
    "date": "2026-09-30",
@@ -837,7 +837,7 @@
    "pnl_pct": 0.24,
    "half_booked": false,
    "current": 357.45,
-   "days_held": 1
+   "days_held": 2
   },
   {
    "date": "2026-09-30",
@@ -856,7 +856,7 @@
    "pnl_pct": -2.0,
    "half_booked": false,
    "current": 1315.0,
-   "days_held": 1
+   "days_held": 2
   },
   {
    "date": "2026-09-29",
@@ -875,7 +875,7 @@
    "pnl_pct": 1.61,
    "half_booked": false,
    "current": 287.75,
-   "days_held": 2
+   "days_held": 3
   },
   {
    "date": "2026-09-29",
@@ -894,7 +894,7 @@
    "pnl_pct": -0.39,
    "half_booked": false,
    "current": 2535.0,
-   "days_held": 2
+   "days_held": 3
   },
   {
    "date": "2026-09-29",
@@ -932,7 +932,7 @@
    "pnl_pct": 5.51,
    "half_booked": true,
    "current": 785.0,
-   "days_held": 3
+   "days_held": 4
   },
   {
    "date": "2026-09-28",
@@ -968,7 +968,7 @@
    "pnl_pct": 3.8,
    "half_booked": false,
    "current": 279.4,
-   "days_held": 6
+   "days_held": 7
   },
   {
    "date": "2026-09-25",
@@ -1040,7 +1040,7 @@
    "pnl_pct": 1.28,
    "half_booked": false,
    "current": 1392.0,
-   "days_held": 7
+   "days_held": 8
   },
   {
    "date": "2026-09-24",
@@ -1078,7 +1078,7 @@
    "pnl_pct": 2.23,
    "half_booked": false,
    "current": 2005.1,
-   "days_held": 7
+   "days_held": 8
   },
   {
    "date": "2026-09-24",
@@ -1116,7 +1116,7 @@
    "pnl_pct": 8.21,
    "half_booked": true,
    "current": 38.91,
-   "days_held": 8
+   "days_held": 9
   },
   {
    "date": "2026-09-23",
@@ -1154,7 +1154,7 @@
    "pnl_pct": 1.63,
    "half_booked": false,
    "current": 1721.8,
-   "days_held": 8
+   "days_held": 9
   },
   {
    "date": "2026-09-23",
@@ -1230,7 +1230,7 @@
    "pnl_pct": 4.32,
    "half_booked": false,
    "current": 1053.2,
-   "days_held": 9
+   "days_held": 10
   },
   {
    "date": "2026-09-22",
@@ -1249,7 +1249,7 @@
    "pnl_pct": 3.95,
    "half_booked": false,
    "current": 3092.8,
-   "days_held": 9
+   "days_held": 10
   },
   {
    "date": "2026-09-22",
@@ -1321,7 +1321,7 @@
    "pnl_pct": -2.96,
    "half_booked": false,
    "current": 237.5,
-   "days_held": 9
+   "days_held": 10
   },
   {
    "date": "2026-09-21",
@@ -1340,7 +1340,7 @@
    "pnl_pct": -1.66,
    "half_booked": false,
    "current": 1984.0,
-   "days_held": 10
+   "days_held": 11
   },
   {
    "date": "2026-09-21",
@@ -1397,7 +1397,7 @@
    "pnl_pct": -1.23,
    "half_booked": false,
    "current": 1145.7,
-   "days_held": 13
+   "days_held": 14
   },
   {
    "date": "2026-09-18",
@@ -1433,7 +1433,7 @@
    "pnl_pct": -2.01,
    "half_booked": false,
    "current": 718.0,
-   "days_held": 13
+   "days_held": 14
   },
   {
    "date": "2026-09-18",
@@ -1452,7 +1452,7 @@
    "pnl_pct": 3.28,
    "half_booked": false,
    "current": 3334.0,
-   "days_held": 13
+   "days_held": 14
   },
   {
    "date": "2026-09-18",
@@ -1505,7 +1505,7 @@
    "pnl_pct": 4.59,
    "half_booked": false,
    "current": 71.75,
-   "days_held": 14
+   "days_held": 15
   },
   {
    "date": "2026-09-17",
@@ -1524,7 +1524,7 @@
    "pnl_pct": 6.61,
    "half_booked": true,
    "current": 2064.0,
-   "days_held": 14
+   "days_held": 15
   },
   {
    "date": "2026-09-17",
@@ -1615,7 +1615,7 @@
    "pnl_pct": 0.99,
    "half_booked": false,
    "current": 9249.0,
-   "days_held": 15
+   "days_held": 16
   },
   {
    "date": "2026-09-15",
@@ -1672,7 +1672,7 @@
    "pnl_pct": 5.01,
    "half_booked": true,
    "current": 397.95,
-   "days_held": 16
+   "days_held": 17
   },
   {
    "date": "2026-09-15",
@@ -1746,7 +1746,7 @@
    "pnl_pct": 6.81,
    "half_booked": true,
    "current": 1287.0,
-   "days_held": 17
+   "days_held": 18
   },
   {
    "date": "2026-09-11",
@@ -1835,7 +1835,7 @@
    "pnl_pct": 8.16,
    "half_booked": true,
    "current": 2340.0,
-   "days_held": 21
+   "days_held": 22
   },
   {
    "date": "2026-09-10",
@@ -1909,7 +1909,7 @@
    "pnl_pct": 9.76,
    "half_booked": true,
    "current": 11386.0,
-   "days_held": 22
+   "days_held": 23
   },
   {
    "date": "2026-09-09",
@@ -1928,7 +1928,7 @@
    "pnl_pct": 5.84,
    "half_booked": false,
    "current": 3693.4,
-   "days_held": 22
+   "days_held": 23
   },
   {
    "date": "2026-09-09",
@@ -1964,7 +1964,7 @@
    "pnl_pct": -2.1,
    "half_booked": false,
    "current": 1737.8,
-   "days_held": 22
+   "days_held": 23
   },
   {
    "date": "2026-09-08",
@@ -2059,7 +2059,7 @@
    "pnl_pct": 6.21,
    "half_booked": false,
    "current": 197.0,
-   "days_held": 24
+   "days_held": 25
   },
   {
    "date": "2026-09-07",
@@ -2078,7 +2078,7 @@
    "pnl_pct": 4.29,
    "half_booked": false,
    "current": 4502.0,
-   "days_held": 24
+   "days_held": 25
   },
   {
    "date": "2026-09-07",

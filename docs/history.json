@@ -150,7 +150,7 @@
    "pnl_pct": 6.21,
    "half_booked": false,
    "current": 197.0,
-   "days_held": 24
+   "days_held": 25
   },
   {
    "date": "2026-09-07",
@@ -188,7 +188,7 @@
    "pnl_pct": 4.29,
    "half_booked": false,
    "current": 4502.0,
-   "days_held": 24
+   "days_held": 25
   },
   {
    "date": "2026-09-07",
@@ -357,7 +357,7 @@
    "pnl_pct": 5.84,
    "half_booked": false,
    "current": 3693.4,
-   "days_held": 22
+   "days_held": 23
   },
   {
    "date": "2026-09-09",
@@ -376,7 +376,7 @@
    "pnl_pct": 9.76,
    "half_booked": true,
    "current": 11386.0,
-   "days_held": 22
+   "days_held": 23
   },
   {
    "date": "2026-09-09",
@@ -395,7 +395,7 @@
    "pnl_pct": -2.1,
    "half_booked": false,
    "current": 1737.8,
-   "days_held": 22
+   "days_held": 23
   },
   {
    "date": "2026-09-10",
@@ -433,7 +433,7 @@
    "pnl_pct": 8.16,
    "half_booked": true,
    "current": 2340.0,
-   "days_held": 21
+   "days_held": 22
   },
   {
    "date": "2026-09-10",
@@ -577,7 +577,7 @@
    "pnl_pct": 6.81,
    "half_booked": true,
    "current": 1287.0,
-   "days_held": 17
+   "days_held": 18
   },
   {
    "date": "2026-09-15",
@@ -632,7 +632,7 @@
    "pnl_pct": 5.01,
    "half_booked": true,
    "current": 397.95,
-   "days_held": 16
+   "days_held": 17
   },
   {
    "date": "2026-09-15",
@@ -744,7 +744,7 @@
    "pnl_pct": 0.99,
    "half_booked": false,
    "current": 9249.0,
-   "days_held": 15
+   "days_held": 16
   },
   {
    "date": "2026-09-17",
@@ -763,7 +763,7 @@
    "pnl_pct": 6.61,
    "half_booked": true,
    "current": 2064.0,
-   "days_held": 14
+   "days_held": 15
   },
   {
    "date": "2026-09-17",
@@ -782,7 +782,7 @@
    "pnl_pct": 4.59,
    "half_booked": false,
    "current": 71.75,
-   "days_held": 14
+   "days_held": 15
   },
   {
    "date": "2026-09-17",
@@ -852,7 +852,7 @@
    "pnl_pct": -1.23,
    "half_booked": false,
    "current": 1145.7,
-   "days_held": 13
+   "days_held": 14
   },
   {
    "date": "2026-09-18",
@@ -888,7 +888,7 @@
    "pnl_pct": -2.01,
    "half_booked": false,
    "current": 718.0,
-   "days_held": 13
+   "days_held": 14
   },
   {
    "date": "2026-09-18",
@@ -907,7 +907,7 @@
    "pnl_pct": 3.28,
    "half_booked": false,
    "current": 3334.0,
-   "days_held": 13
+   "days_held": 14
   },
   {
    "date": "2026-09-21",
@@ -945,7 +945,7 @@
    "pnl_pct": -1.66,
    "half_booked": false,
    "current": 1984.0,
-   "days_held": 10
+   "days_held": 11
   },
   {
    "date": "2026-09-21",
@@ -983,7 +983,7 @@
    "pnl_pct": 3.95,
    "half_booked": false,
    "current": 3092.8,
-   "days_held": 9
+   "days_held": 10
   },
   {
    "date": "2026-09-22",
@@ -1002,7 +1002,7 @@
    "pnl_pct": 4.32,
    "half_booked": false,
    "current": 1053.2,
-   "days_held": 9
+   "days_held": 10
   },
   {
    "date": "2026-09-22",
@@ -1074,7 +1074,7 @@
    "pnl_pct": -2.96,
    "half_booked": false,
    "current": 237.5,
-   "days_held": 9
+   "days_held": 10
   },
   {
    "date": "2026-09-23",
@@ -1093,7 +1093,7 @@
    "pnl_pct": 8.21,
    "half_booked": true,
    "current": 38.91,
-   "days_held": 8
+   "days_held": 9
   },
   {
    "date": "2026-09-23",
@@ -1169,7 +1169,7 @@
    "pnl_pct": 1.63,
    "half_booked": false,
    "current": 1721.8,
-   "days_held": 8
+   "days_held": 9
   },
   {
    "date": "2026-09-23",
@@ -1226,7 +1226,7 @@
    "pnl_pct": 1.28,
    "half_booked": false,
    "current": 1392.0,
-   "days_held": 7
+   "days_held": 8
   },
   {
    "date": "2026-09-24",
@@ -1281,7 +1281,7 @@
    "pnl_pct": 2.23,
    "half_booked": false,
    "current": 2005.1,
-   "days_held": 7
+   "days_held": 8
   },
   {
    "date": "2026-09-25",
@@ -1317,7 +1317,7 @@
    "pnl_pct": 3.8,
    "half_booked": false,
    "current": 279.4,
-   "days_held": 6
+   "days_held": 7
   },
   {
    "date": "2026-09-25",
@@ -1372,7 +1372,7 @@
    "pnl_pct": 5.51,
    "half_booked": true,
    "current": 785.0,
-   "days_held": 3
+   "days_held": 4
   },
   {
    "date": "2026-09-29",
@@ -1391,7 +1391,7 @@
    "pnl_pct": 1.61,
    "half_booked": false,
    "current": 287.75,
-   "days_held": 2
+   "days_held": 3
   },
   {
    "date": "2026-09-29",
@@ -1410,7 +1410,7 @@
    "pnl_pct": -0.39,
    "half_booked": false,
    "current": 2535.0,
-   "days_held": 2
+   "days_held": 3
   },
   {
    "date": "2026-09-29",
@@ -1465,7 +1465,7 @@
    "pnl_pct": 1.47,
    "half_booked": false,
    "current": 2340.0,
-   "days_held": 1
+   "days_held": 2
   },
   {
    "date": "2026-09-30",
@@ -1484,7 +1484,7 @@
    "pnl_pct": 0.24,
    "half_booked": false,
    "current": 357.45,
-   "days_held": 1
+   "days_held": 2
   },
   {
    "date": "2026-09-30",
@@ -1503,7 +1503,7 @@
    "pnl_pct": -2.0,
    "half_booked": false,
    "current": 1315.0,
-   "days_held": 1
+   "days_held": 2
   },
   {
    "date": "2026-10-01",
@@ -1522,7 +1522,7 @@
    "pnl_pct": 0.0,
    "half_booked": false,
    "current": 212.5,
-   "days_held": 0
+   "days_held": 1
   },
   {
    "date": "2026-10-01",
@@ -1541,7 +1541,7 @@
    "pnl_pct": 0.0,
    "half_booked": false,
    "current": 2860.0,
-   "days_held": 0
+   "days_held": 1
   },
   {
    "date": "2026-10-01",
@@ -1560,8 +1560,8 @@
    "pnl_pct": 0.0,
    "half_booked": false,
    "current": 792.15,
-   "days_held": 0
+   "days_held": 1
   }
  ],
- "updated_at": "2026-10-01 13:37 UTC"
+ "updated_at": "2026-10-02 13:35 UTC"
 }
