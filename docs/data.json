@@ -1,31 +1,9 @@
 {
- "generated_at": "2026-10-06 13:35 UTC",
+ "generated_at": "2026-10-07 19:23 UTC",
  "universe_scanned": 500,
  "fno_universe": 213,
  "notes": [],
  "fno": [
-  {
-   "symbol": "BHEL",
-   "cmp": 452.0,
-   "chg": 5.36,
-   "score": 95.0,
-   "signal": "🟢 PRIORITY BUY",
-   "rsi": 65.4,
-   "pattern": "🚀 52W Breakout",
-   "sl": 429.4,
-   "t1": 497.2,
-   "t2": 519.8,
-   "why": [
-    "F&O flow: Bullish",
-    "Confidence: MEDIUM-HIGH",
-    "Chart pattern: 🚀 52W Breakout",
-    "Trend: Strong Uptrend ↑↑"
-   ],
-   "action": "🟢 STRONG BUY",
-   "confidence": "⭐⭐ MEDIUM-HIGH",
-   "trend": "✅ BULLISH",
-   "buildup": false
-  },
   {
    "symbol": "LAURUSLABS",
    "cmp": 2050.0,
@@ -95,22 +73,22 @@
    "buildup": false
   },
   {
-   "symbol": "INDUSTOWER",
-   "cmp": 389.1,
-   "chg": 2.34,
+   "symbol": "HAL",
+   "cmp": 4816.0,
+   "chg": 2.91,
    "score": 67.0,
    "signal": "🔵 WATCHLIST BUY",
-   "rsi": 58.5,
+   "rsi": 53.2,
    "pattern": "📉→📈 EMA Pullback",
-   "sl": 369.64,
-   "t1": 428.01,
-   "t2": 447.46,
+   "sl": 4575.2,
+   "t1": 5297.6,
+   "t2": 5538.4,
    "why": [
     "F&O flow: Bullish",
     "Confidence: MEDIUM",
     "Chart pattern: 📉→📈 EMA Pullback",
-    "Trend: Medium Uptrend ↑",
-    "RSI 58 — in the healthy entry zone"
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 53 — in the healthy entry zone"
    ],
    "action": "🔵 BUY",
    "confidence": "⭐⭐ MEDIUM",
@@ -218,6 +196,27 @@
    "confidence": "⭐⭐ MEDIUM",
    "trend": "❌ STRONGLY BEARISH",
    "side": "short"
+  },
+  {
+   "symbol": "NTPC",
+   "cmp": 321.45,
+   "chg": -0.11,
+   "score": 65.0,
+   "signal": "🔴 SKIP",
+   "rsi": 42.6,
+   "pattern": "📈→📉 EMA Rejection",
+   "sl": 334.31,
+   "t1": 295.73,
+   "t2": 282.88,
+   "why": [
+    "Chart pattern: 📈 Higher Lows",
+    "Trend: Downtrend ↓",
+    "RSI 43 — in the healthy entry zone"
+   ],
+   "action": "🔽 SHORT",
+   "confidence": "⭐⭐ MEDIUM",
+   "trend": "❌ STRONGLY BEARISH",
+   "side": "short"
   }
  ],
  "tier_a": [
@@ -227,7 +226,7 @@
    "chg": 5.35,
    "score": 85.0,
    "signal": "🟢 PRIORITY BUY",
-   "rsi": 67.4,
+   "rsi": 68.3,
    "pattern": "📈 Higher Lows",
    "sl": 2650.21,
    "t1": 3068.67,
@@ -238,7 +237,7 @@
     "ROE 21% — passed the quality gate",
     "P/E 45 vs its own 5-year average of 50 — cheaper than usual",
     "Market cap Rs 27,757 Cr",
-    "Trades ~Rs 99 Cr/day — liquid enough to exit"
+    "Trades ~Rs 90 Cr/day — liquid enough to exit"
    ],
    "roe": 21.33,
    "buildup": false
@@ -358,6 +357,52 @@
    "buildup": false
   },
   {
+   "symbol": "NAVINFLUOR",
+   "cmp": 8536.0,
+   "chg": 3.19,
+   "score": 68.0,
+   "signal": "🔵 WATCHLIST BUY",
+   "rsi": 55.8,
+   "pattern": "📉→📈 EMA Pullback",
+   "sl": 8109.2,
+   "t1": 9389.6,
+   "t2": 9816.4,
+   "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 56 — in the healthy entry zone",
+    "ROE 20% — passed the quality gate",
+    "P/E 55 vs its own 5-year average of 71 — cheaper than usual",
+    "Market cap Rs 43,912 Cr",
+    "Trades ~Rs 96 Cr/day — liquid enough to exit"
+   ],
+   "roe": 19.64,
+   "buildup": false
+  },
+  {
+   "symbol": "BLUESTARCO",
+   "cmp": 1571.5,
+   "chg": 4.07,
+   "score": 67.0,
+   "signal": "🟡 WEAK",
+   "rsi": 56.2,
+   "pattern": "📉→📈 EMA Pullback",
+   "sl": 1492.92,
+   "t1": 1728.65,
+   "t2": 1807.22,
+   "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Downtrend ↓",
+    "RSI 56 — in the healthy entry zone",
+    "ROE 17% — passed the quality gate",
+    "P/E 58 vs its own 5-year average of 63 — cheaper than usual",
+    "Market cap Rs 30,513 Cr",
+    "Trades ~Rs 102 Cr/day — liquid enough to exit"
+   ],
+   "roe": 17.2,
+   "buildup": true
+  },
+  {
    "symbol": "HAL",
    "cmp": 4816.0,
    "chg": 2.91,
@@ -402,52 +447,6 @@
    ],
    "roe": 14.24,
    "buildup": false
-  },
-  {
-   "symbol": "COFORGE",
-   "cmp": 1849.7,
-   "chg": -0.12,
-   "score": 65.0,
-   "signal": "🔵 WATCHLIST BUY",
-   "rsi": 55.0,
-   "pattern": "⚡ Inside Bar",
-   "sl": 1757.22,
-   "t1": 2034.67,
-   "t2": 2127.15,
-   "why": [
-    "Chart pattern: ⚡ Inside Bar",
-    "Trend: Strong Uptrend ↑↑",
-    "RSI 55 — in the healthy entry zone",
-    "ROE 21% — passed the quality gate",
-    "P/E 46 vs 5-year average 45 — richer than usual",
-    "Market cap Rs 87,391 Cr",
-    "Trades ~Rs 462 Cr/day — liquid enough to exit"
-   ],
-   "roe": 21.41,
-   "buildup": false
-  },
-  {
-   "symbol": "TDPOWERSYS",
-   "cmp": 816.0,
-   "chg": 0.38,
-   "score": 65.0,
-   "signal": "🔵 WATCHLIST BUY",
-   "rsi": 61.6,
-   "pattern": "📈 Higher Lows",
-   "sl": 775.2,
-   "t1": 897.6,
-   "t2": 938.4,
-   "why": [
-    "Chart pattern: 📈 Higher Lows",
-    "Trend: Strong Uptrend ↑↑",
-    "RSI 62 — in the healthy entry zone",
-    "ROE 25% — passed the quality gate",
-    "P/E 84 vs 5-year average 39 — richer than usual",
-    "Market cap Rs 23,125 Cr",
-    "Trades ~Rs 258 Cr/day — liquid enough to exit"
-   ],
-   "roe": 24.72,
-   "buildup": false
   }
  ],
  "tier_b": [
@@ -478,39 +477,12 @@
    "pe5y": 86.67
   },
   {
-   "symbol": "GABRIEL",
-   "cmp": 1352.9,
-   "chg": 3.78,
-   "score": 38.0,
-   "signal": "🔴 SKIP",
-   "rsi": 49.6,
-   "pattern": "📈 Higher Lows",
-   "sl": 1285.26,
-   "t1": 1488.19,
-   "t2": 1555.84,
-   "why": [
-    "Chart pattern: 📈 Higher Lows",
-    "Trend: Medium Uptrend ↑",
-    "RSI 50 — in the healthy entry zone",
-    "ROE 20% — passed the quality gate",
-    "P/E 67 vs 5-year average 41 — richer than usual",
-    "Market cap Rs 23,983 Cr",
-    "Trades ~Rs 88 Cr/day — liquid enough to exit",
-    "Ranked on fundamentals (75/100) weighted 65%, technicals (38/100) 35%"
-   ],
-   "blended": 62.19,
-   "fund": 75.22,
-   "roe": 20.2,
-   "pe": 66.57,
-   "pe5y": 41.04
-  },
-  {
    "symbol": "RRKABEL",
    "cmp": 2789.7,
    "chg": 5.35,
    "score": 85.0,
    "signal": "🟢 PRIORITY BUY",
-   "rsi": 67.4,
+   "rsi": 68.3,
    "pattern": "📈 Higher Lows",
    "sl": 2650.21,
    "t1": 3068.67,
@@ -521,7 +493,7 @@
     "ROE 21% — passed the quality gate",
     "P/E 45 vs its own 5-year average of 50 — cheaper than usual",
     "Market cap Rs 27,757 Cr",
-    "Trades ~Rs 99 Cr/day — liquid enough to exit",
+    "Trades ~Rs 90 Cr/day — liquid enough to exit",
     "Ranked on fundamentals (47/100) weighted 65%, technicals (85/100) 35%"
    ],
    "blended": 60.45,
@@ -555,6 +527,32 @@
    "roe": 34.02,
    "pe": 22.72,
    "pe5y": 37.99
+  },
+  {
+   "symbol": "GABRIEL",
+   "cmp": 1352.9,
+   "chg": 3.78,
+   "score": 28.0,
+   "signal": "🔴 SKIP",
+   "rsi": 49.9,
+   "pattern": "No Pattern",
+   "sl": 1285.26,
+   "t1": 1488.19,
+   "t2": 1555.84,
+   "why": [
+    "Trend: Medium Uptrend ↑",
+    "RSI 50 — in the healthy entry zone",
+    "ROE 20% — passed the quality gate",
+    "P/E 67 vs 5-year average 41 — richer than usual",
+    "Market cap Rs 23,983 Cr",
+    "Trades ~Rs 86 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (75/100) weighted 65%, technicals (28/100) 35%"
+   ],
+   "blended": 58.69,
+   "fund": 75.22,
+   "roe": 20.2,
+   "pe": 66.57,
+   "pe5y": 41.04
   },
   {
    "symbol": "CPPLUS",
@@ -691,60 +689,117 @@
    "pe5y": 50.16
   },
   {
-   "symbol": "HAL",
-   "cmp": 4816.0,
-   "chg": 2.91,
-   "score": 67.0,
+   "symbol": "NAVINFLUOR",
+   "cmp": 8536.0,
+   "chg": 3.19,
+   "score": 68.0,
    "signal": "🔵 WATCHLIST BUY",
-   "rsi": 53.2,
+   "rsi": 55.8,
    "pattern": "📉→📈 EMA Pullback",
-   "sl": 4575.2,
-   "t1": 5297.6,
-   "t2": 5538.4,
+   "sl": 8109.2,
+   "t1": 9389.6,
+   "t2": 9816.4,
    "why": [
     "Chart pattern: 📉→📈 EMA Pullback",
     "Trend: Strong Uptrend ↑↑",
-    "RSI 53 — in the healthy entry zone",
-    "ROE 24% — passed the quality gate",
-    "P/E 35 vs 5-year average 30 — richer than usual",
-    "Market cap Rs 324,757 Cr",
-    "Trades ~Rs 335 Cr/day — liquid enough to exit",
-    "Ranked on fundamentals (47/100) weighted 65%, technicals (67/100) 35%"
+    "RSI 56 — in the healthy entry zone",
+    "ROE 20% — passed the quality gate",
+    "P/E 55 vs its own 5-year average of 71 — cheaper than usual",
+    "Market cap Rs 43,912 Cr",
+    "Trades ~Rs 96 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (47/100) weighted 65%, technicals (68/100) 35%"
    ],
-   "blended": 54.05,
-   "fund": 47.07,
-   "roe": 23.97,
-   "pe": 34.84,
-   "pe5y": 29.98
+   "blended": 54.21,
+   "fund": 46.78,
+   "roe": 19.64,
+   "pe": 55.21,
+   "pe5y": 70.9
   }
  ],
  "track_summary": {
   "F&O": {
-   "total": 50,
+   "total": 51,
    "closed": 29,
-   "open": 21,
+   "open": 0,
    "realized_avg": -3.17,
-   "unrealized_avg": 3.01,
+   "unrealized_avg": null,
    "win_rate": 6.9
   },
   "Swing": {
-   "total": 35,
+   "total": 36,
    "closed": 24,
-   "open": 11,
+   "open": 0,
    "realized_avg": -5.0,
-   "unrealized_avg": 1.91,
+   "unrealized_avg": null,
    "win_rate": 0.0
   },
   "Investment": {
-   "total": 6,
+   "total": 7,
    "closed": 4,
-   "open": 2,
+   "open": 0,
    "realized_avg": -5.0,
-   "unrealized_avg": 1.65,
+   "unrealized_avg": null,
    "win_rate": 0.0
   }
  },
  "track_picks": [
+  {
+   "date": "2026-10-07",
+   "category": "Investment",
+   "symbol": "TMCV",
+   "side": "LONG",
+   "entry": 433.8,
+   "sl": 412.11,
+   "t1": 477.18,
+   "t2": 498.87,
+   "score": 28.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false,
+   "current": null,
+   "days_held": 0
+  },
+  {
+   "date": "2026-10-07",
+   "category": "Swing",
+   "symbol": "RRKABEL",
+   "side": "LONG",
+   "entry": 2789.7,
+   "sl": 2650.21,
+   "t1": 3068.67,
+   "t2": 3208.15,
+   "score": 85.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false,
+   "current": null,
+   "days_held": 0
+  },
+  {
+   "date": "2026-10-07",
+   "category": "F&O",
+   "symbol": "NATIONALUM",
+   "side": "SHORT",
+   "entry": 337.25,
+   "sl": 350.74,
+   "t1": 310.27,
+   "t2": 296.78,
+   "score": 74.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false,
+   "current": null,
+   "days_held": 0
+  },
   {
    "date": "2026-10-06",
    "category": "Swing",
@@ -776,10 +831,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 0.0,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 4460.1,
-   "days_held": 0
+   "current": null,
+   "days_held": 1
   },
   {
    "date": "2026-10-06",
@@ -795,10 +850,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 0.0,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 3976.0,
-   "days_held": 0
+   "current": null,
+   "days_held": 1
   },
   {
    "date": "2026-10-06",
@@ -831,10 +886,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 0.0,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 7914.5,
-   "days_held": 0
+   "current": null,
+   "days_held": 1
   },
   {
    "date": "2026-10-05",
@@ -850,10 +905,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -0.4,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 338.2,
-   "days_held": 1
+   "current": null,
+   "days_held": 2
   },
   {
    "date": "2026-10-05",
@@ -886,10 +941,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 3.01,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 816.0,
-   "days_held": 5
+   "current": null,
+   "days_held": 6
   },
   {
    "date": "2026-10-01",
@@ -905,10 +960,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 0.17,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 2855.0,
-   "days_held": 5
+   "current": null,
+   "days_held": 6
   },
   {
    "date": "2026-10-01",
@@ -924,10 +979,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -2.54,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 217.9,
-   "days_held": 5
+   "current": null,
+   "days_held": 6
   },
   {
    "date": "2026-09-30",
@@ -979,10 +1034,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 1.81,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 363.05,
-   "days_held": 6
+   "current": null,
+   "days_held": 7
   },
   {
    "date": "2026-09-30",
@@ -998,10 +1053,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 0.83,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 1352.9,
-   "days_held": 6
+   "current": null,
+   "days_held": 7
   },
   {
    "date": "2026-09-29",
@@ -1017,10 +1072,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -2.58,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 300.0,
-   "days_held": 7
+   "current": null,
+   "days_held": 8
   },
   {
    "date": "2026-09-29",
@@ -1036,10 +1091,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -1.77,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 2500.0,
-   "days_held": 7
+   "current": null,
+   "days_held": 8
   },
   {
    "date": "2026-09-29",
@@ -1074,10 +1129,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 8.03,
+   "pnl_pct": null,
    "half_booked": true,
-   "current": 764.0,
-   "days_held": 8
+   "current": null,
+   "days_held": 9
   },
   {
    "date": "2026-09-28",
@@ -1110,10 +1165,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 1.6,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 285.8,
-   "days_held": 11
+   "current": null,
+   "days_held": 12
   },
   {
    "date": "2026-09-25",
@@ -1182,10 +1237,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 3.48,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 1361.0,
-   "days_held": 12
+   "current": null,
+   "days_held": 13
   },
   {
    "date": "2026-09-24",
@@ -1220,10 +1275,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 0.15,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 1964.2,
-   "days_held": 12
+   "current": null,
+   "days_held": 13
   },
   {
    "date": "2026-09-24",
@@ -1258,10 +1313,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 7.62,
+   "pnl_pct": null,
    "half_booked": true,
-   "current": 39.16,
-   "days_held": 13
+   "current": null,
+   "days_held": 14
   },
   {
    "date": "2026-09-23",
@@ -1296,10 +1351,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 3.8,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 1758.6,
-   "days_held": 13
+   "current": null,
+   "days_held": 14
   },
   {
    "date": "2026-09-23",
@@ -1372,10 +1427,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 2.99,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 1067.9,
-   "days_held": 14
+   "current": null,
+   "days_held": 15
   },
   {
    "date": "2026-09-22",
@@ -1391,10 +1446,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 3.94,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 3093.0,
-   "days_held": 14
+   "current": null,
+   "days_held": 15
   },
   {
    "date": "2026-09-22",
@@ -1482,10 +1537,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 1.61,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 2050.0,
-   "days_held": 15
+   "current": null,
+   "days_held": 16
   },
   {
    "date": "2026-09-21",
@@ -1539,10 +1594,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -0.04,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 1159.5,
-   "days_held": 18
+   "current": null,
+   "days_held": 19
   },
   {
    "date": "2026-09-18",
@@ -1575,10 +1630,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 0.44,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 736.0,
-   "days_held": 18
+   "current": null,
+   "days_held": 19
   },
   {
    "date": "2026-09-18",
@@ -1594,10 +1649,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 2.46,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 3307.5,
-   "days_held": 18
+   "current": null,
+   "days_held": 19
   },
   {
    "date": "2026-09-18",
@@ -1647,10 +1702,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 2.78,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 73.11,
-   "days_held": 19
+   "current": null,
+   "days_held": 20
   },
   {
    "date": "2026-09-17",
@@ -1666,10 +1721,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 4.93,
+   "pnl_pct": null,
    "half_booked": true,
-   "current": 2101.0,
-   "days_held": 19
+   "current": null,
+   "days_held": 20
   },
   {
    "date": "2026-09-17",
@@ -1757,10 +1812,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 4.28,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 9550.0,
-   "days_held": 20
+   "current": null,
+   "days_held": 21
   },
   {
    "date": "2026-09-15",
@@ -1814,10 +1869,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 7.06,
+   "pnl_pct": null,
    "half_booked": true,
-   "current": 405.7,
-   "days_held": 21
+   "current": null,
+   "days_held": 22
   },
   {
    "date": "2026-09-15",
@@ -1888,10 +1943,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 7.17,
+   "pnl_pct": null,
    "half_booked": true,
-   "current": 1282.0,
-   "days_held": 22
+   "current": null,
+   "days_held": 23
   },
   {
    "date": "2026-09-11",
@@ -1977,10 +2032,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 5.89,
+   "pnl_pct": null,
    "half_booked": true,
-   "current": 2398.0,
-   "days_held": 26
+   "current": null,
+   "days_held": 27
   },
   {
    "date": "2026-09-10",
@@ -2051,10 +2106,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 7.87,
+   "pnl_pct": null,
    "half_booked": true,
-   "current": 11625.0,
-   "days_held": 27
+   "current": null,
+   "days_held": 28
   },
   {
    "date": "2026-09-09",
@@ -2070,10 +2125,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 3.89,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 3770.0,
-   "days_held": 27
+   "current": null,
+   "days_held": 28
   },
   {
    "date": "2026-09-09",
@@ -2106,10 +2161,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 0.47,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 1783.4,
-   "days_held": 27
+   "current": null,
+   "days_held": 28
   },
   {
    "date": "2026-09-08",
@@ -2201,10 +2256,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 5.37,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 198.78,
-   "days_held": 29
+   "current": null,
+   "days_held": 30
   },
   {
    "date": "2026-09-07",
@@ -2220,10 +2275,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 3.12,
+   "pnl_pct": null,
    "half_booked": false,
-   "current": 4557.4,
-   "days_held": 29
+   "current": null,
+   "days_held": 30
   },
   {
    "date": "2026-09-07",
