@@ -147,10 +147,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 6.27,
+   "pnl_pct": 6.34,
    "half_booked": true,
-   "current": 196.88,
-   "days_held": 37
+   "current": 196.74,
+   "days_held": 38
   },
   {
    "date": "2026-09-07",
@@ -185,10 +185,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 1.19,
+   "pnl_pct": 2.82,
    "half_booked": false,
-   "current": 4648.0,
-   "days_held": 37
+   "current": 4571.2,
+   "days_held": 38
   },
   {
    "date": "2026-09-07",
@@ -354,10 +354,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 7.15,
+   "pnl_pct": 7.41,
    "half_booked": true,
-   "current": 3642.0,
-   "days_held": 35
+   "current": 3632.0,
+   "days_held": 36
   },
   {
    "date": "2026-09-09",
@@ -373,10 +373,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 11.41,
+   "pnl_pct": 9.3,
    "half_booked": true,
-   "current": 11178.0,
-   "days_held": 35
+   "current": 11445.0,
+   "days_held": 36
   },
   {
    "date": "2026-09-09",
@@ -430,10 +430,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 1.26,
+   "pnl_pct": 2.12,
    "half_booked": true,
-   "current": 2516.0,
-   "days_held": 34
+   "current": 2494.0,
+   "days_held": 35
   },
   {
    "date": "2026-09-10",
@@ -629,10 +629,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 5.98,
+   "pnl_pct": 3.47,
    "half_booked": true,
-   "current": 401.6,
-   "days_held": 29
+   "current": 392.1,
+   "days_held": 30
   },
   {
    "date": "2026-09-15",
@@ -741,10 +741,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -1.47,
+   "pnl_pct": -1.4,
    "half_booked": false,
-   "current": 9023.0,
-   "days_held": 28
+   "current": 9030.0,
+   "days_held": 29
   },
   {
    "date": "2026-09-17",
@@ -760,10 +760,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 3.87,
+   "pnl_pct": 4.75,
    "half_booked": true,
-   "current": 2124.4,
-   "days_held": 27
+   "current": 2105.0,
+   "days_held": 28
   },
   {
    "date": "2026-09-17",
@@ -779,10 +779,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 1.97,
+   "pnl_pct": 3.32,
    "half_booked": false,
-   "current": 73.72,
-   "days_held": 27
+   "current": 72.7,
+   "days_held": 28
   },
   {
    "date": "2026-09-17",
@@ -849,10 +849,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -3.04,
+   "pnl_pct": -1.71,
    "half_booked": false,
-   "current": 1124.7,
-   "days_held": 26
+   "current": 1140.2,
+   "days_held": 27
   },
   {
    "date": "2026-09-18",
@@ -885,10 +885,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -1.0,
+   "pnl_pct": 1.19,
    "half_booked": false,
-   "current": 725.4,
-   "days_held": 26
+   "current": 741.45,
+   "days_held": 27
   },
   {
    "date": "2026-09-18",
@@ -942,10 +942,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 0.96,
+   "pnl_pct": 0.05,
    "half_booked": false,
-   "current": 2036.9,
-   "days_held": 23
+   "current": 2018.5,
+   "days_held": 24
   },
   {
    "date": "2026-09-21",
@@ -999,10 +999,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 5.54,
+   "pnl_pct": 4.43,
    "half_booked": true,
-   "current": 1039.8,
-   "days_held": 22
+   "current": 1052.0,
+   "days_held": 23
   },
   {
    "date": "2026-09-22",
@@ -1166,10 +1166,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 2.76,
+   "pnl_pct": 2.24,
    "half_booked": false,
-   "current": 1741.0,
-   "days_held": 21
+   "current": 1732.1,
+   "days_held": 22
   },
   {
    "date": "2026-09-23",
@@ -1223,10 +1223,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 8.94,
+   "pnl_pct": 9.43,
    "half_booked": true,
-   "current": 1284.0,
-   "days_held": 20
+   "current": 1277.0,
+   "days_held": 21
   },
   {
    "date": "2026-09-24",
@@ -1274,11 +1274,11 @@
    "t1": 2157.43,
    "t2": 2255.49,
    "score": 82.0,
-   "status": "open",
-   "exit_date": null,
-   "exit_price": null,
-   "exit_reason": null,
-   "pnl_pct": -1.19,
+   "status": "closed",
+   "exit_date": "2026-10-15",
+   "exit_price": 1863.23,
+   "exit_reason": "Stop Loss",
+   "pnl_pct": -5.0,
    "half_booked": false,
    "current": 1938.0,
    "days_held": 20
@@ -1314,10 +1314,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 2.29,
+   "pnl_pct": 1.17,
    "half_booked": false,
-   "current": 283.8,
-   "days_held": 19
+   "current": 287.05,
+   "days_held": 20
   },
   {
    "date": "2026-09-25",
@@ -1369,10 +1369,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 9.72,
+   "pnl_pct": 10.17,
    "half_booked": true,
-   "current": 750.0,
-   "days_held": 16
+   "current": 746.25,
+   "days_held": 17
   },
   {
    "date": "2026-09-29",
@@ -1500,10 +1500,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 5.85,
+   "pnl_pct": 6.74,
    "half_booked": false,
-   "current": 1420.3,
-   "days_held": 14
+   "current": 1432.3,
+   "days_held": 15
   },
   {
    "date": "2026-10-01",
@@ -1538,10 +1538,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 2.32,
+   "pnl_pct": -0.06,
    "half_booked": false,
-   "current": 2793.7,
-   "days_held": 13
+   "current": 2861.7,
+   "days_held": 14
   },
   {
    "date": "2026-10-01",
@@ -1553,11 +1553,11 @@
    "t1": 871.37,
    "t2": 910.97,
    "score": 90.0,
-   "status": "open",
-   "exit_date": null,
-   "exit_price": null,
-   "exit_reason": null,
-   "pnl_pct": -1.07,
+   "status": "closed",
+   "exit_date": "2026-10-15",
+   "exit_price": 752.54,
+   "exit_reason": "Stop Loss",
+   "pnl_pct": -5.0,
    "half_booked": false,
    "current": 783.7,
    "days_held": 13
@@ -1593,10 +1593,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -0.9,
+   "pnl_pct": -0.34,
    "half_booked": false,
-   "current": 336.5,
-   "days_held": 9
+   "current": 338.4,
+   "days_held": 10
   },
   {
    "date": "2026-10-06",
@@ -1629,10 +1629,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 1.14,
+   "pnl_pct": 0.32,
    "half_booked": false,
-   "current": 7824.0,
-   "days_held": 8
+   "current": 7889.5,
+   "days_held": 9
   },
   {
    "date": "2026-10-06",
@@ -1684,10 +1684,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 2.11,
+   "pnl_pct": -0.25,
    "half_booked": false,
-   "current": 4554.1,
-   "days_held": 8
+   "current": 4449.0,
+   "days_held": 9
   },
   {
    "date": "2026-10-07",
@@ -1703,10 +1703,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 4.18,
+   "pnl_pct": 5.59,
    "half_booked": true,
-   "current": 323.15,
-   "days_held": 7
+   "current": 318.4,
+   "days_held": 8
   },
   {
    "date": "2026-10-07",
@@ -1760,10 +1760,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 7.01,
+   "pnl_pct": 8.52,
    "half_booked": true,
-   "current": 2220.5,
-   "days_held": 6
+   "current": 2184.6,
+   "days_held": 7
   },
   {
    "date": "2026-10-08",
@@ -1779,10 +1779,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -1.53,
+   "pnl_pct": -1.8,
    "half_booked": false,
-   "current": 4444.0,
-   "days_held": 6
+   "current": 4455.8,
+   "days_held": 7
   },
   {
    "date": "2026-10-09",
@@ -1836,10 +1836,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -0.55,
+   "pnl_pct": -0.18,
    "half_booked": false,
-   "current": 71.08,
-   "days_held": 5
+   "current": 70.82,
+   "days_held": 6
   },
   {
    "date": "2026-10-12",
@@ -1855,10 +1855,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 2.22,
+   "pnl_pct": 1.21,
    "half_booked": false,
-   "current": 5898.0,
-   "days_held": 2
+   "current": 5840.0,
+   "days_held": 3
   },
   {
    "date": "2026-10-12",
@@ -1874,10 +1874,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 1.3,
+   "pnl_pct": -1.65,
    "half_booked": false,
-   "current": 118.5,
-   "days_held": 2
+   "current": 115.05,
+   "days_held": 3
   },
   {
    "date": "2026-10-12",
@@ -1893,10 +1893,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 3.22,
+   "pnl_pct": 3.55,
    "half_booked": false,
-   "current": 1928.0,
-   "days_held": 2
+   "current": 1934.3,
+   "days_held": 3
   },
   {
    "date": "2026-10-13",
@@ -1912,10 +1912,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -1.49,
+   "pnl_pct": -0.4,
    "half_booked": false,
-   "current": 3415.0,
-   "days_held": 1
+   "current": 3378.4,
+   "days_held": 2
   },
   {
    "date": "2026-10-13",
@@ -1927,11 +1927,11 @@
    "t1": 784.76,
    "t2": 750.64,
    "score": 74.0,
-   "status": "open",
-   "exit_date": null,
-   "exit_price": null,
-   "exit_reason": null,
-   "pnl_pct": -1.52,
+   "status": "closed",
+   "exit_date": "2026-10-15",
+   "exit_price": 887.12,
+   "exit_reason": "Stop Loss",
+   "pnl_pct": -4.0,
    "half_booked": false,
    "current": 866.0,
    "days_held": 1
@@ -1969,10 +1969,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": -1.21,
+   "pnl_pct": -3.66,
    "half_booked": false,
-   "current": 8457.0,
-   "days_held": 1
+   "current": 8247.5,
+   "days_held": 2
   },
   {
    "date": "2026-10-14",
@@ -1988,10 +1988,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 0.0,
+   "pnl_pct": -1.26,
    "half_booked": false,
-   "current": 1713.0,
-   "days_held": 0
+   "current": 1691.5,
+   "days_held": 1
   },
   {
    "date": "2026-10-14",
@@ -2007,10 +2007,10 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": 0.0,
+   "pnl_pct": 2.49,
    "half_booked": false,
-   "current": 1327.0,
-   "days_held": 0
+   "current": 1360.0,
+   "days_held": 1
   },
   {
    "date": "2026-10-14",
@@ -2026,11 +2026,83 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
+   "pnl_pct": 0.25,
+   "half_booked": false,
+   "current": 3616.0,
+   "days_held": 1
+  },
+  {
+   "date": "2026-10-15",
+   "category": "F&O",
+   "symbol": "YESBANK",
+   "side": "SHORT",
+   "entry": 18.12,
+   "sl": 18.84,
+   "t1": 16.67,
+   "t2": 15.95,
+   "score": 90.0,
+   "status": "closed",
+   "exit_date": "2026-10-15",
+   "exit_price": 18.84,
+   "exit_reason": "Stop Loss",
+   "pnl_pct": -3.97,
+   "half_booked": false
+  },
+  {
+   "date": "2026-10-15",
+   "category": "F&O",
+   "symbol": "POWERINDIA",
+   "side": "SHORT",
+   "entry": 28770.0,
+   "sl": 29920.8,
+   "t1": 26468.4,
+   "t2": 25317.6,
+   "score": 80.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
    "pnl_pct": 0.0,
    "half_booked": false,
-   "current": 3607.0,
+   "current": 28770.0,
    "days_held": 0
+  },
+  {
+   "date": "2026-10-15",
+   "category": "F&O",
+   "symbol": "BANKINDIA",
+   "side": "SHORT",
+   "entry": 130.4,
+   "sl": 135.62,
+   "t1": 119.97,
+   "t2": 114.75,
+   "score": 74.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": 0.0,
+   "half_booked": false,
+   "current": 130.4,
+   "days_held": 0
+  },
+  {
+   "date": "2026-10-15",
+   "category": "Investment",
+   "symbol": "ENRIN",
+   "side": "SHORT",
+   "entry": 2957.0,
+   "sl": 3075.28,
+   "t1": 2720.44,
+   "t2": 2602.16,
+   "score": 65.0,
+   "status": "closed",
+   "exit_date": "2026-10-15",
+   "exit_price": 3075.28,
+   "exit_reason": "Stop Loss",
+   "pnl_pct": -4.0,
+   "half_booked": false
   }
  ],
- "updated_at": "2026-10-14 18:03 UTC"
+ "updated_at": "2026-10-15 17:49 UTC"
 }
