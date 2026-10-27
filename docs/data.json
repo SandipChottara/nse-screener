@@ -1,64 +1,72 @@
 {
- "generated_at": "2026-10-26 19:23 UTC",
- "universe_scanned": 499,
+ "generated_at": "2026-10-27 18:44 UTC",
+ "universe_scanned": 500,
  "fno_universe": 213,
  "notes": [],
- "fno": [],
+ "fno": [
+  {
+   "symbol": "INDUSTOWER",
+   "cmp": 389.0,
+   "chg": 2.37,
+   "score": 84.0,
+   "signal": "🟢 PRIORITY BUY",
+   "rsi": 57.5,
+   "pattern": "📉→📈 EMA Pullback",
+   "sl": 369.55,
+   "t1": 427.9,
+   "t2": 447.35,
+   "why": [
+    "F&O flow: Bullish",
+    "Confidence: MEDIUM-HIGH",
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 58 — in the healthy entry zone"
+   ],
+   "action": "🟢 STRONG BUY",
+   "confidence": "⭐⭐ MEDIUM-HIGH",
+   "trend": "✅ BULLISH",
+   "buildup": false
+  },
+  {
+   "symbol": "KOTAKBANK",
+   "cmp": 440.75,
+   "chg": 2.38,
+   "score": 85.0,
+   "signal": "🟢 PRIORITY BUY",
+   "rsi": 58.9,
+   "pattern": "📉→📈 EMA Pullback",
+   "sl": 418.71,
+   "t1": 484.83,
+   "t2": 506.86,
+   "why": [
+    "F&O flow: Bullish",
+    "Long buildup — price up AND open interest rising together",
+    "Confidence: MEDIUM-HIGH",
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 59 — in the healthy entry zone"
+   ],
+   "action": "🟢 STRONG BUY",
+   "confidence": "⭐⭐ MEDIUM-HIGH",
+   "trend": "✅ BULLISH",
+   "buildup": true
+  }
+ ],
  "fno_short": [
   {
-   "symbol": "360ONE",
-   "cmp": 997.1,
-   "chg": -4.08,
-   "score": 90.0,
-   "signal": "🔴 SKIP",
-   "rsi": 34.5,
-   "pattern": "📈→📉 EMA Rejection",
-   "sl": 1036.98,
-   "t1": 917.33,
-   "t2": 877.45,
-   "why": [
-    "Trend: Downtrend ↓",
-    "RSI 34 — weak momentum"
-   ],
-   "action": "🔻 STRONG SHORT",
-   "confidence": "⭐⭐⭐ HIGH",
-   "trend": "❌ STRONGLY BEARISH",
-   "side": "short"
-  },
-  {
-   "symbol": "SWIGGY",
-   "cmp": 176.0,
-   "chg": -16.75,
+   "symbol": "BANKINDIA",
+   "cmp": 126.32,
+   "chg": -3.57,
    "score": 85.0,
    "signal": "🔴 SKIP",
-   "rsi": 15.6,
+   "rsi": 35.7,
    "pattern": "📉 Lower Highs",
-   "sl": 183.04,
-   "t1": 161.92,
-   "t2": 154.88,
+   "sl": 131.37,
+   "t1": 116.21,
+   "t2": 111.16,
    "why": [
     "Trend: Downtrend ↓",
-    "RSI 16 — weak momentum"
-   ],
-   "action": "🔻 STRONG SHORT",
-   "confidence": "⭐⭐⭐ HIGH",
-   "trend": "❌ STRONGLY BEARISH",
-   "side": "short"
-  },
-  {
-   "symbol": "CHOLAFIN",
-   "cmp": 1463.8,
-   "chg": -4.38,
-   "score": 84.0,
-   "signal": "🔴 SKIP",
-   "rsi": 27.1,
-   "pattern": "📉 Lower Highs",
-   "sl": 1522.35,
-   "t1": 1346.7,
-   "t2": 1288.14,
-   "why": [
-    "Trend: Downtrend ↓",
-    "RSI 27 — weak momentum"
+    "RSI 36 — weak momentum"
    ],
    "action": "🔽 SHORT",
    "confidence": "⭐⭐ MEDIUM",
@@ -66,36 +74,16 @@
    "side": "short"
   },
   {
-   "symbol": "LICI",
-   "cmp": 381.5,
-   "chg": -1.55,
-   "score": 84.0,
-   "signal": "🔴 SKIP",
-   "rsi": 37.5,
-   "pattern": "📈→📉 EMA Rejection",
-   "sl": 396.76,
-   "t1": 350.98,
-   "t2": 335.72,
-   "why": [
-    "Trend: Downtrend ↓",
-    "RSI 38 — weak momentum"
-   ],
-   "action": "🔻 STRONG SHORT",
-   "confidence": "⭐⭐⭐ HIGH",
-   "trend": "❌ STRONGLY BEARISH",
-   "side": "short"
-  },
-  {
-   "symbol": "NHPC",
-   "cmp": 69.84,
-   "chg": -3.51,
-   "score": 84.0,
+   "symbol": "SUPREMEIND",
+   "cmp": 3250.0,
+   "chg": -4.13,
+   "score": 85.0,
    "signal": "🔴 SKIP",
    "rsi": 34.8,
    "pattern": "📈→📉 EMA Rejection",
-   "sl": 72.63,
-   "t1": 64.25,
-   "t2": 61.46,
+   "sl": 3380.0,
+   "t1": 2990.0,
+   "t2": 2860.0,
    "why": [
     "Trend: Downtrend ↓",
     "RSI 35 — weak momentum"
@@ -106,19 +94,19 @@
    "side": "short"
   },
   {
-   "symbol": "COLPAL",
-   "cmp": 1605.0,
-   "chg": -4.75,
+   "symbol": "360ONE",
+   "cmp": 975.0,
+   "chg": -2.22,
    "score": 80.0,
    "signal": "🔴 SKIP",
-   "rsi": 30.3,
+   "rsi": 31.0,
    "pattern": "📉 Lower Highs",
-   "sl": 1669.2,
-   "t1": 1476.6,
-   "t2": 1412.4,
+   "sl": 1014.0,
+   "t1": 897.0,
+   "t2": 858.0,
    "why": [
     "Trend: Downtrend ↓",
-    "RSI 30 — weak momentum"
+    "RSI 31 — weak momentum"
    ],
    "action": "🔻 STRONG SHORT",
    "confidence": "⭐⭐⭐ HIGH",
@@ -126,19 +114,19 @@
    "side": "short"
   },
   {
-   "symbol": "GVT&D",
-   "cmp": 3700.0,
-   "chg": -1.07,
+   "symbol": "AUBANK",
+   "cmp": 869.0,
+   "chg": -6.85,
    "score": 80.0,
    "signal": "🔴 SKIP",
-   "rsi": 26.5,
+   "rsi": 23.7,
    "pattern": "📉 Lower Highs",
-   "sl": 3848.0,
-   "t1": 3404.0,
-   "t2": 3256.0,
+   "sl": 903.76,
+   "t1": 799.48,
+   "t2": 764.72,
    "why": [
     "Trend: Downtrend ↓",
-    "RSI 26 — weak momentum"
+    "RSI 24 — weak momentum"
    ],
    "action": "🔻 STRONG SHORT",
    "confidence": "⭐⭐⭐ HIGH",
@@ -146,19 +134,59 @@
    "side": "short"
   },
   {
-   "symbol": "HAVELLS",
-   "cmp": 1031.0,
-   "chg": -3.91,
+   "symbol": "TATAPOWER",
+   "cmp": 338.5,
+   "chg": -2.76,
    "score": 80.0,
    "signal": "🔴 SKIP",
-   "rsi": 37.3,
+   "rsi": 35.7,
    "pattern": "📈→📉 EMA Rejection",
-   "sl": 1072.24,
-   "t1": 948.52,
-   "t2": 907.28,
+   "sl": 352.04,
+   "t1": 311.42,
+   "t2": 297.88,
    "why": [
     "Trend: Downtrend ↓",
-    "RSI 37 — weak momentum"
+    "RSI 36 — weak momentum"
+   ],
+   "action": "🔽 SHORT",
+   "confidence": "⭐⭐ MEDIUM",
+   "trend": "❌ BEARISH",
+   "side": "short"
+  },
+  {
+   "symbol": "ASTRAL",
+   "cmp": 1349.0,
+   "chg": -0.59,
+   "score": 79.0,
+   "signal": "🔴 SKIP",
+   "rsi": 34.7,
+   "pattern": "📈→📉 EMA Rejection",
+   "sl": 1402.96,
+   "t1": 1241.08,
+   "t2": 1187.12,
+   "why": [
+    "Trend: Downtrend ↓",
+    "RSI 35 — weak momentum"
+   ],
+   "action": "🔻 STRONG SHORT",
+   "confidence": "⭐⭐⭐ HIGH",
+   "trend": "❌ STRONGLY BEARISH",
+   "side": "short"
+  },
+  {
+   "symbol": "PIIND",
+   "cmp": 2020.0,
+   "chg": -1.51,
+   "score": 79.0,
+   "signal": "🔴 SKIP",
+   "rsi": 28.7,
+   "pattern": "📉 Lower Highs",
+   "sl": 2100.8,
+   "t1": 1858.4,
+   "t2": 1777.6,
+   "why": [
+    "Trend: Downtrend ↓",
+    "RSI 29 — weak momentum"
    ],
    "action": "🔻 STRONG SHORT",
    "confidence": "⭐⭐⭐ HIGH",
@@ -167,546 +195,526 @@
   },
   {
    "symbol": "NAM-INDIA",
-   "cmp": 922.6,
-   "chg": -5.47,
-   "score": 80.0,
+   "cmp": 919.1,
+   "chg": -0.38,
+   "score": 74.0,
    "signal": "🔴 SKIP",
-   "rsi": 24.6,
+   "rsi": 24.3,
    "pattern": "📉 Lower Highs",
-   "sl": 959.5,
-   "t1": 848.79,
-   "t2": 811.89,
+   "sl": 955.86,
+   "t1": 845.57,
+   "t2": 808.81,
    "why": [
+    "Chart pattern: ⚡ Inside Bar",
     "Trend: Downtrend ↓",
-    "RSI 25 — weak momentum"
-   ],
-   "action": "🔻 STRONG SHORT",
-   "confidence": "⭐⭐⭐ HIGH",
-   "trend": "❌ STRONGLY BEARISH",
-   "side": "short"
-  },
-  {
-   "symbol": "SBICARD",
-   "cmp": 545.55,
-   "chg": -3.66,
-   "score": 80.0,
-   "signal": "🔴 SKIP",
-   "rsi": 34.4,
-   "pattern": "📈→📉 EMA Rejection",
-   "sl": 567.37,
-   "t1": 501.91,
-   "t2": 480.08,
-   "why": [
-    "Trend: Downtrend ↓",
-    "RSI 34 — weak momentum"
+    "RSI 24 — weak momentum"
    ],
    "action": "🔽 SHORT",
    "confidence": "⭐⭐ MEDIUM",
-   "trend": "❌ BEARISH",
+   "trend": "❌ STRONGLY BEARISH",
    "side": "short"
   }
  ],
  "tier_a": [
   {
-   "symbol": "INDHOTEL",
-   "cmp": 781.75,
-   "chg": -0.07,
-   "score": 85.0,
-   "signal": "🟢 PRIORITY BUY",
-   "rsi": 65.3,
-   "pattern": "📈 Higher Lows",
-   "sl": 742.66,
-   "t1": 859.92,
-   "t2": 899.01,
-   "why": [
-    "Chart pattern: 📈 Higher Lows",
-    "Trend: Strong Uptrend ↑↑",
-    "ROE 14% — passed the quality gate",
-    "P/E 53 vs its own 5-year average of 64 — cheaper than usual",
-    "Market cap Rs 102,487 Cr",
-    "Trades ~Rs 443 Cr/day — liquid enough to exit"
-   ],
-   "roe": 14.24,
-   "buildup": false
-  },
-  {
-   "symbol": "ANANDRATHI",
-   "cmp": 2235.0,
-   "chg": 0.54,
-   "score": 79.0,
-   "signal": "🟢 PRIORITY BUY",
-   "rsi": 63.9,
-   "pattern": "📈 Higher Lows",
-   "sl": 2123.25,
-   "t1": 2458.5,
-   "t2": 2570.25,
-   "why": [
-    "Chart pattern: 📈 Higher Lows",
-    "Trend: Strong Uptrend ↑↑",
-    "RSI 64 — in the healthy entry zone",
-    "ROE 45% — passed the quality gate",
-    "P/E 80 vs 5-year average 56 — richer than usual",
-    "Market cap Rs 36,793 Cr",
-    "Trades ~Rs 124 Cr/day — liquid enough to exit"
-   ],
-   "roe": 45.3,
-   "buildup": false
-  },
-  {
    "symbol": "INFY",
-   "cmp": 1153.8,
-   "chg": 0.04,
-   "score": 75.0,
+   "cmp": 1166.0,
+   "chg": 1.06,
+   "score": 84.0,
    "signal": "🟢 PRIORITY BUY",
-   "rsi": 63.8,
-   "pattern": "No Pattern",
-   "sl": 1096.11,
-   "t1": 1269.18,
-   "t2": 1326.87,
+   "rsi": 65.5,
+   "pattern": "📉→📈 EMA Pullback",
+   "sl": 1107.7,
+   "t1": 1282.6,
+   "t2": 1340.9,
    "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
     "Trend: Strong Uptrend ↑↑",
-    "RSI 64 — in the healthy entry zone",
     "ROE 32% — passed the quality gate",
     "P/E 15 vs its own 5-year average of 26 — cheaper than usual",
     "Market cap Rs 458,580 Cr",
-    "Trades ~Rs 1,731 Cr/day — liquid enough to exit"
+    "Trades ~Rs 1,860 Cr/day — liquid enough to exit"
    ],
    "roe": 31.89,
    "buildup": false
   },
   {
-   "symbol": "COFORGE",
-   "cmp": 1900.5,
-   "chg": -0.43,
-   "score": 73.0,
+   "symbol": "ZYDUSLIFE",
+   "cmp": 1160.4,
+   "chg": 2.74,
+   "score": 74.0,
    "signal": "🔵 WATCHLIST BUY",
-   "rsi": 54.6,
-   "pattern": "🏁 Bull Flag",
-   "sl": 1805.48,
-   "t1": 2090.55,
-   "t2": 2185.57,
+   "rsi": 55.3,
+   "pattern": "No Pattern",
+   "sl": 1102.38,
+   "t1": 1276.44,
+   "t2": 1334.46,
    "why": [
-    "Chart pattern: 🏁 Bull Flag",
     "Trend: Strong Uptrend ↑↑",
     "RSI 55 — in the healthy entry zone",
     "ROE 21% — passed the quality gate",
-    "P/E 46 vs 5-year average 45 — richer than usual",
-    "Market cap Rs 87,391 Cr",
-    "Trades ~Rs 430 Cr/day — liquid enough to exit"
+    "P/E 23 vs 5-year average 21 — richer than usual",
+    "Market cap Rs 111,720 Cr",
+    "Trades ~Rs 188 Cr/day — liquid enough to exit"
    ],
-   "roe": 21.41,
+   "roe": 21.25,
    "buildup": false
   },
   {
-   "symbol": "PERSISTENT",
-   "cmp": 5727.5,
-   "chg": -0.23,
-   "score": 73.0,
+   "symbol": "BHARTIARTL",
+   "cmp": 1917.5,
+   "chg": 1.34,
+   "score": 70.0,
    "signal": "🔵 WATCHLIST BUY",
-   "rsi": 54.4,
-   "pattern": "🏁 Bull Flag",
-   "sl": 5441.12,
-   "t1": 6300.25,
-   "t2": 6586.62,
+   "rsi": 62.0,
+   "pattern": "📉→📈 EMA Pullback",
+   "sl": 1821.62,
+   "t1": 2109.25,
+   "t2": 2205.12,
    "why": [
-    "Chart pattern: 🏁 Bull Flag",
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Medium Uptrend ↑",
+    "RSI 62 — in the healthy entry zone",
+    "ROE 20% — passed the quality gate",
+    "P/E 37 vs its own 5-year average of 59 — cheaper than usual",
+    "Market cap Rs 1,148,252 Cr",
+    "Trades ~Rs 1,583 Cr/day — liquid enough to exit"
+   ],
+   "roe": 20.27,
+   "buildup": true
+  },
+  {
+   "symbol": "PERSISTENT",
+   "cmp": 5850.0,
+   "chg": 2.14,
+   "score": 70.0,
+   "signal": "🔵 WATCHLIST BUY",
+   "rsi": 58.7,
+   "pattern": "📉→📈 EMA Pullback",
+   "sl": 5557.5,
+   "t1": 6435.0,
+   "t2": 6727.5,
+   "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
     "Trend: Strong Uptrend ↑↑",
-    "RSI 54 — in the healthy entry zone",
+    "RSI 59 — in the healthy entry zone",
     "ROE 27% — passed the quality gate",
     "P/E 45 vs its own 5-year average of 52 — cheaper than usual",
     "Market cap Rs 89,018 Cr",
-    "Trades ~Rs 416 Cr/day — liquid enough to exit"
+    "Trades ~Rs 426 Cr/day — liquid enough to exit"
    ],
    "roe": 27.24,
    "buildup": false
   },
   {
-   "symbol": "LTTS",
-   "cmp": 3910.3,
-   "chg": -1.13,
-   "score": 72.0,
+   "symbol": "COFORGE",
+   "cmp": 1993.0,
+   "chg": 4.87,
+   "score": 69.0,
    "signal": "🔵 WATCHLIST BUY",
-   "rsi": 69.2,
-   "pattern": "⚡ Inside Bar",
-   "sl": 3714.78,
-   "t1": 4301.33,
-   "t2": 4496.84,
+   "rsi": 64.1,
+   "pattern": "No Pattern",
+   "sl": 1893.35,
+   "t1": 2192.3,
+   "t2": 2291.95,
    "why": [
-    "Chart pattern: ⚡ Inside Bar",
     "Trend: Strong Uptrend ↑↑",
-    "ROE 22% — passed the quality gate",
-    "P/E 28 vs its own 5-year average of 38 — cheaper than usual",
-    "Market cap Rs 37,056 Cr",
-    "Trades ~Rs 227 Cr/day — liquid enough to exit"
+    "RSI 64 — in the healthy entry zone",
+    "ROE 21% — passed the quality gate",
+    "P/E 46 vs 5-year average 45 — richer than usual",
+    "Market cap Rs 87,391 Cr",
+    "Trades ~Rs 487 Cr/day — liquid enough to exit"
    ],
-   "roe": 21.53,
+   "roe": 21.41,
    "buildup": false
   },
   {
-   "symbol": "HEXT",
-   "cmp": 581.3,
-   "chg": -0.11,
-   "score": 55.0,
-   "signal": "🟡 WEAK",
-   "rsi": 68.2,
+   "symbol": "ACUTAAS",
+   "cmp": 3348.8,
+   "chg": 6.73,
+   "score": 65.0,
+   "signal": "🔵 WATCHLIST BUY",
+   "rsi": 57.1,
    "pattern": "No Pattern",
-   "sl": 552.23,
-   "t1": 639.43,
-   "t2": 668.49,
-   "why": [
-    "Trend: Strong Uptrend ↑↑",
-    "ROE 25% — passed the quality gate",
-    "P/E 23 vs its own 5-year average of 30 — cheaper than usual",
-    "Market cap Rs 32,298 Cr",
-    "Trades ~Rs 119 Cr/day — liquid enough to exit"
-   ],
-   "roe": 24.86,
-   "buildup": false
-  },
-  {
-   "symbol": "BHARTIARTL",
-   "cmp": 1892.1,
-   "chg": -0.15,
-   "score": 52.0,
-   "signal": "🟡 WEAK",
-   "rsi": 58.7,
-   "pattern": "No Pattern",
-   "sl": 1797.5,
-   "t1": 2081.31,
-   "t2": 2175.91,
+   "sl": 3181.36,
+   "t1": 3683.68,
+   "t2": 3851.12,
    "why": [
     "Trend: Medium Uptrend ↑",
-    "RSI 59 — in the healthy entry zone",
-    "ROE 20% — passed the quality gate",
-    "P/E 37 vs its own 5-year average of 59 — cheaper than usual",
-    "Market cap Rs 1,148,252 Cr",
-    "Trades ~Rs 1,577 Cr/day — liquid enough to exit"
+    "RSI 57 — in the healthy entry zone",
+    "ROE 24% — passed the quality gate",
+    "P/E 67 vs 5-year average 59 — richer than usual",
+    "Market cap Rs 25,941 Cr",
+    "Trades ~Rs 131 Cr/day — liquid enough to exit"
    ],
-   "roe": 20.27,
+   "roe": 24.04,
+   "buildup": false
+  },
+  {
+   "symbol": "ANANDRATHI",
+   "cmp": 2230.0,
+   "chg": -0.22,
+   "score": 65.0,
+   "signal": "🔵 WATCHLIST BUY",
+   "rsi": 62.8,
+   "pattern": "📈 Higher Lows",
+   "sl": 2118.5,
+   "t1": 2453.0,
+   "t2": 2564.5,
+   "why": [
+    "Chart pattern: 📈 Higher Lows",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 63 — in the healthy entry zone",
+    "ROE 45% — passed the quality gate",
+    "P/E 80 vs 5-year average 56 — richer than usual",
+    "Market cap Rs 36,793 Cr",
+    "Trades ~Rs 125 Cr/day — liquid enough to exit"
+   ],
+   "roe": 45.3,
+   "buildup": false
+  },
+  {
+   "symbol": "INDHOTEL",
+   "cmp": 795.5,
+   "chg": 1.76,
+   "score": 62.0,
+   "signal": "🔵 WATCHLIST BUY",
+   "rsi": 68.4,
+   "pattern": "No Pattern",
+   "sl": 755.72,
+   "t1": 875.05,
+   "t2": 914.82,
+   "why": [
+    "Trend: Strong Uptrend ↑↑",
+    "ROE 14% — passed the quality gate",
+    "P/E 53 vs its own 5-year average of 64 — cheaper than usual",
+    "Market cap Rs 102,487 Cr",
+    "Trades ~Rs 471 Cr/day — liquid enough to exit"
+   ],
+   "roe": 14.24,
    "buildup": false
   },
   {
    "symbol": "TCS",
-   "cmp": 2530.0,
-   "chg": 0.92,
-   "score": 52.0,
+   "cmp": 2535.0,
+   "chg": 0.2,
+   "score": 47.0,
    "signal": "🟡 WEAK",
-   "rsi": 74.7,
-   "pattern": "📈 Higher Lows",
-   "sl": 2403.5,
-   "t1": 2783.0,
-   "t2": 2909.5,
+   "rsi": 74.9,
+   "pattern": "🏁 Bull Flag",
+   "sl": 2408.25,
+   "t1": 2788.5,
+   "t2": 2915.25,
    "why": [
-    "Chart pattern: 📈 Higher Lows",
+    "Chart pattern: 🏁 Bull Flag",
     "Trend: Strong Uptrend ↑↑",
     "RSI 75 — overbought, may pull back first",
     "ROE 52% — passed the quality gate",
     "P/E 16 vs its own 5-year average of 30 — cheaper than usual",
     "Market cap Rs 833,607 Cr",
-    "Trades ~Rs 1,487 Cr/day — liquid enough to exit"
+    "Trades ~Rs 1,522 Cr/day — liquid enough to exit"
    ],
    "roe": 51.81,
    "buildup": false
   },
   {
-   "symbol": "CEMPRO",
-   "cmp": 1149.9,
-   "chg": 1.55,
-   "score": 37.0,
-   "signal": "🔴 SKIP",
-   "rsi": 42.6,
+   "symbol": "ADANIPORTS",
+   "cmp": 1752.5,
+   "chg": 2.92,
+   "score": 45.0,
+   "signal": "🟡 WEAK",
+   "rsi": 50.4,
    "pattern": "No Pattern",
-   "sl": 1092.4,
-   "t1": 1264.89,
-   "t2": 1322.38,
+   "sl": 1664.88,
+   "t1": 1927.75,
+   "t2": 2015.37,
    "why": [
-    "Trend: Above 200 EMA",
-    "RSI 43 — in the healthy entry zone",
-    "ROE 28% — passed the quality gate",
-    "P/E 37 vs 5-year average 26 — richer than usual",
-    "Market cap Rs 22,288 Cr",
-    "Trades ~Rs 53 Cr/day — liquid enough to exit"
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 50 — in the healthy entry zone",
+    "ROE 16% — passed the quality gate",
+    "P/E 30 vs 5-year average 27 — richer than usual",
+    "Market cap Rs 393,355 Cr",
+    "Trades ~Rs 528 Cr/day — liquid enough to exit"
    ],
-   "roe": 27.8,
+   "roe": 16.38,
    "buildup": false
   }
  ],
  "tier_b": [
   {
-   "symbol": "INDHOTEL",
-   "cmp": 781.75,
-   "chg": -0.07,
-   "score": 85.0,
-   "signal": "🟢 PRIORITY BUY",
-   "rsi": 65.3,
-   "pattern": "📈 Higher Lows",
-   "sl": 742.66,
-   "t1": 859.92,
-   "t2": 899.01,
-   "why": [
-    "Chart pattern: 📈 Higher Lows",
-    "Trend: Strong Uptrend ↑↑",
-    "ROE 14% — passed the quality gate",
-    "P/E 53 vs its own 5-year average of 64 — cheaper than usual",
-    "Market cap Rs 102,487 Cr",
-    "Trades ~Rs 443 Cr/day — liquid enough to exit",
-    "Ranked on fundamentals (47/100) weighted 65%, technicals (85/100) 35%"
-   ],
-   "blended": 60.06,
-   "fund": 46.63,
-   "roe": 14.24,
-   "pe": 52.73,
-   "pe5y": 63.64
-  },
-  {
-   "symbol": "ANANDRATHI",
-   "cmp": 2235.0,
-   "chg": 0.54,
-   "score": 79.0,
-   "signal": "🟢 PRIORITY BUY",
-   "rsi": 63.9,
-   "pattern": "📈 Higher Lows",
-   "sl": 2123.25,
-   "t1": 2458.5,
-   "t2": 2570.25,
-   "why": [
-    "Chart pattern: 📈 Higher Lows",
-    "Trend: Strong Uptrend ↑↑",
-    "RSI 64 — in the healthy entry zone",
-    "ROE 45% — passed the quality gate",
-    "P/E 80 vs 5-year average 56 — richer than usual",
-    "Market cap Rs 36,793 Cr",
-    "Trades ~Rs 124 Cr/day — liquid enough to exit",
-    "Ranked on fundamentals (48/100) weighted 65%, technicals (79/100) 35%"
-   ],
-   "blended": 59.08,
-   "fund": 48.36,
-   "roe": 45.3,
-   "pe": 79.57,
-   "pe5y": 55.56
-  },
-  {
    "symbol": "INFY",
-   "cmp": 1153.8,
-   "chg": 0.04,
-   "score": 75.0,
+   "cmp": 1166.0,
+   "chg": 1.06,
+   "score": 84.0,
    "signal": "🟢 PRIORITY BUY",
-   "rsi": 63.8,
-   "pattern": "No Pattern",
-   "sl": 1096.11,
-   "t1": 1269.18,
-   "t2": 1326.87,
+   "rsi": 65.5,
+   "pattern": "📉→📈 EMA Pullback",
+   "sl": 1107.7,
+   "t1": 1282.6,
+   "t2": 1340.9,
    "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
     "Trend: Strong Uptrend ↑↑",
-    "RSI 64 — in the healthy entry zone",
     "ROE 32% — passed the quality gate",
     "P/E 15 vs its own 5-year average of 26 — cheaper than usual",
     "Market cap Rs 458,580 Cr",
-    "Trades ~Rs 1,731 Cr/day — liquid enough to exit",
-    "Ranked on fundamentals (47/100) weighted 65%, technicals (75/100) 35%"
+    "Trades ~Rs 1,860 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (47/100) weighted 65%, technicals (84/100) 35%"
    ],
-   "blended": 56.99,
+   "blended": 60.14,
    "fund": 47.3,
    "roe": 31.89,
    "pe": 14.71,
    "pe5y": 25.51
   },
   {
-   "symbol": "PERSISTENT",
-   "cmp": 5727.5,
-   "chg": -0.23,
-   "score": 73.0,
-   "signal": "🔵 WATCHLIST BUY",
-   "rsi": 54.4,
-   "pattern": "🏁 Bull Flag",
-   "sl": 5441.12,
-   "t1": 6300.25,
-   "t2": 6586.62,
-   "why": [
-    "Chart pattern: 🏁 Bull Flag",
-    "Trend: Strong Uptrend ↑↑",
-    "RSI 54 — in the healthy entry zone",
-    "ROE 27% — passed the quality gate",
-    "P/E 45 vs its own 5-year average of 52 — cheaper than usual",
-    "Market cap Rs 89,018 Cr",
-    "Trades ~Rs 416 Cr/day — liquid enough to exit",
-    "Ranked on fundamentals (47/100) weighted 65%, technicals (73/100) 35%"
-   ],
-   "blended": 56.35,
-   "fund": 47.38,
-   "roe": 27.24,
-   "pe": 44.73,
-   "pe5y": 51.77
-  },
-  {
-   "symbol": "COFORGE",
-   "cmp": 1900.5,
-   "chg": -0.43,
-   "score": 73.0,
-   "signal": "🔵 WATCHLIST BUY",
-   "rsi": 54.6,
-   "pattern": "🏁 Bull Flag",
-   "sl": 1805.48,
-   "t1": 2090.55,
-   "t2": 2185.57,
-   "why": [
-    "Chart pattern: 🏁 Bull Flag",
-    "Trend: Strong Uptrend ↑↑",
-    "RSI 55 — in the healthy entry zone",
-    "ROE 21% — passed the quality gate",
-    "P/E 46 vs 5-year average 45 — richer than usual",
-    "Market cap Rs 87,391 Cr",
-    "Trades ~Rs 430 Cr/day — liquid enough to exit",
-    "Ranked on fundamentals (47/100) weighted 65%, technicals (73/100) 35%"
-   ],
-   "blended": 56.16,
-   "fund": 47.1,
-   "roe": 21.41,
-   "pe": 45.58,
-   "pe5y": 45.48
-  },
-  {
-   "symbol": "LTTS",
-   "cmp": 3910.3,
-   "chg": -1.13,
-   "score": 72.0,
-   "signal": "🔵 WATCHLIST BUY",
-   "rsi": 69.2,
-   "pattern": "⚡ Inside Bar",
-   "sl": 3714.78,
-   "t1": 4301.33,
-   "t2": 4496.84,
-   "why": [
-    "Chart pattern: ⚡ Inside Bar",
-    "Trend: Strong Uptrend ↑↑",
-    "ROE 22% — passed the quality gate",
-    "P/E 28 vs its own 5-year average of 38 — cheaper than usual",
-    "Market cap Rs 37,056 Cr",
-    "Trades ~Rs 227 Cr/day — liquid enough to exit",
-    "Ranked on fundamentals (47/100) weighted 65%, technicals (72/100) 35%"
-   ],
-   "blended": 55.62,
-   "fund": 46.8,
-   "roe": 21.53,
-   "pe": 27.57,
-   "pe5y": 37.5
-  },
-  {
    "symbol": "ENRIN",
-   "cmp": 2653.3,
-   "chg": -4.01,
-   "score": 7.0,
+   "cmp": 2754.9,
+   "chg": 3.83,
+   "score": 15.0,
    "signal": "🔴 SKIP",
-   "rsi": 23.9,
+   "rsi": 32.5,
    "pattern": "No Pattern",
-   "sl": 2520.64,
-   "t1": 2918.63,
-   "t2": 3051.3,
+   "sl": 2617.15,
+   "t1": 3030.39,
+   "t2": 3168.14,
    "why": [
     "Trend: Downtrend ↓",
-    "RSI 24 — weak momentum",
+    "RSI 32 — weak momentum",
     "ROE 50% — passed the quality gate",
     "P/E 73 vs its own 5-year average of 87 — cheaper than usual",
     "Market cap Rs 110,956 Cr",
-    "Trades ~Rs 146 Cr/day — liquid enough to exit",
-    "Ranked on fundamentals (78/100) weighted 65%, technicals (7/100) 35%"
+    "Trades ~Rs 154 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (78/100) weighted 65%, technicals (15/100) 35%"
    ],
-   "blended": 53.04,
+   "blended": 55.84,
    "fund": 77.82,
    "roe": 50.47,
    "pe": 72.69,
    "pe5y": 86.67
   },
   {
-   "symbol": "TMCV",
-   "cmp": 396.0,
-   "chg": -4.41,
-   "score": 7.0,
-   "signal": "🔴 SKIP",
-   "rsi": 33.5,
-   "pattern": "No Pattern",
-   "sl": 376.2,
-   "t1": 435.6,
-   "t2": 455.4,
+   "symbol": "PERSISTENT",
+   "cmp": 5850.0,
+   "chg": 2.14,
+   "score": 70.0,
+   "signal": "🔵 WATCHLIST BUY",
+   "rsi": 58.7,
+   "pattern": "📉→📈 EMA Pullback",
+   "sl": 5557.5,
+   "t1": 6435.0,
+   "t2": 6727.5,
    "why": [
-    "Trend: Downtrend ↓",
-    "RSI 34 — weak momentum",
-    "ROE 34% — passed the quality gate",
-    "P/E 23 vs its own 5-year average of 38 — cheaper than usual",
-    "Market cap Rs 168,741 Cr",
-    "Trades ~Rs 229 Cr/day — liquid enough to exit",
-    "Ranked on fundamentals (76/100) weighted 65%, technicals (7/100) 35%"
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 59 — in the healthy entry zone",
+    "ROE 27% — passed the quality gate",
+    "P/E 45 vs its own 5-year average of 52 — cheaper than usual",
+    "Market cap Rs 89,018 Cr",
+    "Trades ~Rs 426 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (47/100) weighted 65%, technicals (70/100) 35%"
    ],
-   "blended": 51.8,
-   "fund": 75.93,
-   "roe": 34.02,
-   "pe": 22.72,
-   "pe5y": 37.99
+   "blended": 55.3,
+   "fund": 47.38,
+   "roe": 27.24,
+   "pe": 44.73,
+   "pe5y": 51.77
   },
   {
-   "symbol": "HEXT",
-   "cmp": 581.3,
-   "chg": -0.11,
-   "score": 55.0,
-   "signal": "🟡 WEAK",
-   "rsi": 68.2,
+   "symbol": "BHARTIARTL",
+   "cmp": 1917.5,
+   "chg": 1.34,
+   "score": 70.0,
+   "signal": "🔵 WATCHLIST BUY",
+   "rsi": 62.0,
+   "pattern": "📉→📈 EMA Pullback",
+   "sl": 1821.62,
+   "t1": 2109.25,
+   "t2": 2205.12,
+   "why": [
+    "Chart pattern: 📉→📈 EMA Pullback",
+    "Trend: Medium Uptrend ↑",
+    "RSI 62 — in the healthy entry zone",
+    "ROE 20% — passed the quality gate",
+    "P/E 37 vs its own 5-year average of 59 — cheaper than usual",
+    "Market cap Rs 1,148,252 Cr",
+    "Trades ~Rs 1,583 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (47/100) weighted 65%, technicals (70/100) 35%"
+   ],
+   "blended": 54.91,
+   "fund": 46.78,
+   "roe": 20.27,
+   "pe": 36.77,
+   "pe5y": 59.41
+  },
+  {
+   "symbol": "COFORGE",
+   "cmp": 1993.0,
+   "chg": 4.87,
+   "score": 69.0,
+   "signal": "🔵 WATCHLIST BUY",
+   "rsi": 64.1,
    "pattern": "No Pattern",
-   "sl": 552.23,
-   "t1": 639.43,
-   "t2": 668.49,
+   "sl": 1893.35,
+   "t1": 2192.3,
+   "t2": 2291.95,
    "why": [
     "Trend: Strong Uptrend ↑↑",
-    "ROE 25% — passed the quality gate",
-    "P/E 23 vs its own 5-year average of 30 — cheaper than usual",
-    "Market cap Rs 32,298 Cr",
-    "Trades ~Rs 119 Cr/day — liquid enough to exit",
-    "Ranked on fundamentals (47/100) weighted 65%, technicals (55/100) 35%"
+    "RSI 64 — in the healthy entry zone",
+    "ROE 21% — passed the quality gate",
+    "P/E 46 vs 5-year average 45 — richer than usual",
+    "Market cap Rs 87,391 Cr",
+    "Trades ~Rs 487 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (47/100) weighted 65%, technicals (69/100) 35%"
    ],
-   "blended": 49.85,
-   "fund": 47.08,
-   "roe": 24.86,
-   "pe": 22.8,
-   "pe5y": 30.48
+   "blended": 54.76,
+   "fund": 47.1,
+   "roe": 21.41,
+   "pe": 45.58,
+   "pe5y": 45.48
   },
   {
-   "symbol": "TCS",
-   "cmp": 2530.0,
-   "chg": 0.92,
-   "score": 52.0,
-   "signal": "🟡 WEAK",
-   "rsi": 74.7,
+   "symbol": "ANANDRATHI",
+   "cmp": 2230.0,
+   "chg": -0.22,
+   "score": 65.0,
+   "signal": "🔵 WATCHLIST BUY",
+   "rsi": 62.8,
    "pattern": "📈 Higher Lows",
-   "sl": 2403.5,
-   "t1": 2783.0,
-   "t2": 2909.5,
+   "sl": 2118.5,
+   "t1": 2453.0,
+   "t2": 2564.5,
    "why": [
     "Chart pattern: 📈 Higher Lows",
     "Trend: Strong Uptrend ↑↑",
-    "RSI 75 — overbought, may pull back first",
-    "ROE 52% — passed the quality gate",
-    "P/E 16 vs its own 5-year average of 30 — cheaper than usual",
-    "Market cap Rs 833,607 Cr",
-    "Trades ~Rs 1,487 Cr/day — liquid enough to exit",
-    "Ranked on fundamentals (48/100) weighted 65%, technicals (52/100) 35%"
+    "RSI 63 — in the healthy entry zone",
+    "ROE 45% — passed the quality gate",
+    "P/E 80 vs 5-year average 56 — richer than usual",
+    "Market cap Rs 36,793 Cr",
+    "Trades ~Rs 125 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (48/100) weighted 65%, technicals (65/100) 35%"
    ],
-   "blended": 49.52,
-   "fund": 48.19,
-   "roe": 51.81,
-   "pe": 15.53,
-   "pe5y": 29.71
+   "blended": 54.18,
+   "fund": 48.36,
+   "roe": 45.3,
+   "pe": 79.57,
+   "pe5y": 55.56
+  },
+  {
+   "symbol": "ACUTAAS",
+   "cmp": 3348.8,
+   "chg": 6.73,
+   "score": 65.0,
+   "signal": "🔵 WATCHLIST BUY",
+   "rsi": 57.1,
+   "pattern": "No Pattern",
+   "sl": 3181.36,
+   "t1": 3683.68,
+   "t2": 3851.12,
+   "why": [
+    "Trend: Medium Uptrend ↑",
+    "RSI 57 — in the healthy entry zone",
+    "ROE 24% — passed the quality gate",
+    "P/E 67 vs 5-year average 59 — richer than usual",
+    "Market cap Rs 25,941 Cr",
+    "Trades ~Rs 131 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (48/100) weighted 65%, technicals (65/100) 35%"
+   ],
+   "blended": 53.75,
+   "fund": 47.69,
+   "roe": 24.04,
+   "pe": 67.17,
+   "pe5y": 59.25
+  },
+  {
+   "symbol": "INDHOTEL",
+   "cmp": 795.5,
+   "chg": 1.76,
+   "score": 62.0,
+   "signal": "🔵 WATCHLIST BUY",
+   "rsi": 68.4,
+   "pattern": "No Pattern",
+   "sl": 755.72,
+   "t1": 875.05,
+   "t2": 914.82,
+   "why": [
+    "Trend: Strong Uptrend ↑↑",
+    "ROE 14% — passed the quality gate",
+    "P/E 53 vs its own 5-year average of 64 — cheaper than usual",
+    "Market cap Rs 102,487 Cr",
+    "Trades ~Rs 471 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (47/100) weighted 65%, technicals (62/100) 35%"
+   ],
+   "blended": 52.01,
+   "fund": 46.63,
+   "roe": 14.24,
+   "pe": 52.73,
+   "pe5y": 63.64
+  },
+  {
+   "symbol": "VAML",
+   "cmp": 350.2,
+   "chg": 1.7,
+   "score": 8.0,
+   "signal": "🔴 SKIP",
+   "rsi": 32.2,
+   "pattern": "No Pattern",
+   "sl": 332.69,
+   "t1": 385.22,
+   "t2": 402.73,
+   "why": [
+    "Trend: Downtrend ↓",
+    "RSI 32 — weak momentum",
+    "ROE nan% — passed the quality gate",
+    "P/E 11 vs 5-year average 0 — richer than usual",
+    "Market cap Rs 171,177 Cr",
+    "Trades ~Rs 319 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (nan/100) weighted 65%, technicals (8/100) 35%"
+   ],
+   "blended": null,
+   "fund": null,
+   "roe": null,
+   "pe": 10.82,
+   "pe5y": 0.0
+  },
+  {
+   "symbol": "ZYDUSLIFE",
+   "cmp": 1160.4,
+   "chg": 2.74,
+   "score": 74.0,
+   "signal": "🔵 WATCHLIST BUY",
+   "rsi": 55.3,
+   "pattern": "No Pattern",
+   "sl": 1102.38,
+   "t1": 1276.44,
+   "t2": 1334.46,
+   "why": [
+    "Trend: Strong Uptrend ↑↑",
+    "RSI 55 — in the healthy entry zone",
+    "ROE 21% — passed the quality gate",
+    "P/E 23 vs 5-year average 21 — richer than usual",
+    "Market cap Rs 111,720 Cr",
+    "Trades ~Rs 188 Cr/day — liquid enough to exit",
+    "Ranked on fundamentals (47/100) weighted 65%, technicals (74/100) 35%"
+   ],
+   "blended": 56.39,
+   "fund": 46.9,
+   "roe": 21.25,
+   "pe": 22.95,
+   "pe5y": 21.32
   }
  ],
  "track_summary": {
   "F&O": {
-   "total": 64,
-   "closed": 43,
+   "total": 67,
+   "closed": 44,
    "open": 0,
-   "realized_avg": -1.53,
+   "realized_avg": -1.59,
    "unrealized_avg": null,
-   "win_rate": 18.6
+   "win_rate": 18.18
   },
   "Swing": {
-   "total": 32,
+   "total": 33,
    "closed": 27,
    "open": 0,
    "realized_avg": -4.07,
@@ -714,7 +722,7 @@
    "win_rate": 7.41
   },
   "Investment": {
-   "total": 6,
+   "total": 7,
    "closed": 6,
    "open": 0,
    "realized_avg": -1.92,
@@ -723,6 +731,101 @@
   }
  },
  "track_picks": [
+  {
+   "date": "2026-10-27",
+   "category": "Swing",
+   "symbol": "ZYDUSLIFE",
+   "side": "LONG",
+   "entry": 1160.4,
+   "sl": 1102.38,
+   "t1": 1276.44,
+   "t2": 1334.46,
+   "score": 74.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false,
+   "current": null,
+   "days_held": 0
+  },
+  {
+   "date": "2026-10-27",
+   "category": "F&O",
+   "symbol": "SUPREMEIND",
+   "side": "SHORT",
+   "entry": 3250.0,
+   "sl": 3380.0,
+   "t1": 2990.0,
+   "t2": 2860.0,
+   "score": 85.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false,
+   "current": null,
+   "days_held": 0
+  },
+  {
+   "date": "2026-10-27",
+   "category": "F&O",
+   "symbol": "INDUSTOWER",
+   "side": "LONG",
+   "entry": 389.0,
+   "sl": 369.55,
+   "t1": 427.9,
+   "t2": 447.35,
+   "score": 84.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false,
+   "current": null,
+   "days_held": 0
+  },
+  {
+   "date": "2026-10-27",
+   "category": "Investment",
+   "symbol": "ENRIN",
+   "side": "LONG",
+   "entry": 2754.9,
+   "sl": 2617.15,
+   "t1": 3030.39,
+   "t2": 3168.13,
+   "score": 15.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false,
+   "current": null,
+   "days_held": 0
+  },
+  {
+   "date": "2026-10-27",
+   "category": "F&O",
+   "symbol": "BANKINDIA",
+   "side": "SHORT",
+   "entry": 126.32,
+   "sl": 131.37,
+   "t1": 116.21,
+   "t2": 111.16,
+   "score": 85.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false,
+   "current": null,
+   "days_held": 0
+  },
   {
    "date": "2026-10-26",
    "category": "F&O",
@@ -733,11 +836,11 @@
    "t1": 161.92,
    "t2": 154.88,
    "score": 85.0,
-   "status": "open",
-   "exit_date": null,
-   "exit_price": null,
-   "exit_reason": null,
-   "pnl_pct": null,
+   "status": "closed",
+   "exit_date": "2026-10-26",
+   "exit_price": 183.04,
+   "exit_reason": "Stop Loss",
+   "pnl_pct": -4.0,
    "half_booked": false,
    "current": null,
    "days_held": 0
@@ -759,7 +862,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 0
+   "days_held": 1
   },
   {
    "date": "2026-10-26",
@@ -778,7 +881,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 0
+   "days_held": 1
   },
   {
    "date": "2026-10-23",
@@ -831,7 +934,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 3
+   "days_held": 4
   },
   {
    "date": "2026-10-23",
@@ -867,7 +970,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 4
+   "days_held": 5
   },
   {
    "date": "2026-10-21",
@@ -920,7 +1023,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 5
+   "days_held": 6
   },
   {
    "date": "2026-10-20",
@@ -939,7 +1042,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 6
+   "days_held": 7
   },
   {
    "date": "2026-10-20",
@@ -958,7 +1061,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 6
+   "days_held": 7
   },
   {
    "date": "2026-10-20",
@@ -996,7 +1099,7 @@
    "pnl_pct": null,
    "half_booked": true,
    "current": null,
-   "days_held": 10
+   "days_held": 11
   },
   {
    "date": "2026-10-16",
@@ -1034,7 +1137,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 10
+   "days_held": 11
   },
   {
    "date": "2026-10-16",
@@ -1053,7 +1156,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 10
+   "days_held": 11
   },
   {
    "date": "2026-10-15",
@@ -1089,7 +1192,7 @@
    "pnl_pct": null,
    "half_booked": true,
    "current": null,
-   "days_held": 11
+   "days_held": 12
   },
   {
    "date": "2026-10-15",
@@ -1182,7 +1285,7 @@
    "pnl_pct": null,
    "half_booked": true,
    "current": null,
-   "days_held": 12
+   "days_held": 13
   },
   {
    "date": "2026-10-13",
@@ -1239,7 +1342,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 13
+   "days_held": 14
   },
   {
    "date": "2026-10-13",
@@ -1277,7 +1380,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 14
+   "days_held": 15
   },
   {
    "date": "2026-10-12",
@@ -1296,7 +1399,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 14
+   "days_held": 15
   },
   {
    "date": "2026-10-12",
@@ -1315,7 +1418,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 14
+   "days_held": 15
   },
   {
    "date": "2026-10-09",
@@ -1334,7 +1437,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 17
+   "days_held": 18
   },
   {
    "date": "2026-10-09",
@@ -1391,7 +1494,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 18
+   "days_held": 19
   },
   {
    "date": "2026-10-08",
@@ -1558,7 +1661,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 20
+   "days_held": 21
   },
   {
    "date": "2026-10-05",
@@ -1632,7 +1735,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 25
+   "days_held": 26
   },
   {
    "date": "2026-10-01",
@@ -1837,7 +1940,7 @@
    "pnl_pct": null,
    "half_booked": true,
    "current": null,
-   "days_held": 31
+   "days_held": 32
   },
   {
    "date": "2026-09-25",
@@ -2209,7 +2312,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 35
+   "days_held": 36
   },
   {
    "date": "2026-09-21",
@@ -2302,7 +2405,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 38
+   "days_held": 39
   },
   {
    "date": "2026-09-18",
@@ -2374,7 +2477,7 @@
    "pnl_pct": null,
    "half_booked": true,
    "current": null,
-   "days_held": 39
+   "days_held": 40
   },
   {
    "date": "2026-09-17",
@@ -2484,7 +2587,7 @@
    "pnl_pct": null,
    "half_booked": false,
    "current": null,
-   "days_held": 40
+   "days_held": 41
   },
   {
    "date": "2026-09-15",
