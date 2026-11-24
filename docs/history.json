@@ -1836,9 +1836,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 4.65,
    "half_booked": false,
-   "current": null,
+   "current": 67.4,
    "days_held": 46
   },
   {
@@ -1855,9 +1855,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 8.88,
    "half_booked": false,
-   "current": null,
+   "current": 6282.5,
    "days_held": 43
   },
   {
@@ -2007,9 +2007,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 2.81,
    "half_booked": true,
-   "current": null,
+   "current": 1364.3,
    "days_held": 41
   },
   {
@@ -2155,9 +2155,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 11.73,
    "half_booked": true,
-   "current": null,
+   "current": 2128.5,
    "days_held": 39
   },
   {
@@ -2267,9 +2267,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 7.09,
    "half_booked": false,
-   "current": null,
+   "current": 2355.9,
    "days_held": 34
   },
   {
@@ -2487,9 +2487,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": -2.25,
    "half_booked": false,
-   "current": null,
+   "current": 380.25,
    "days_held": 28
   },
   {
@@ -2506,9 +2506,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 3.37,
    "half_booked": false,
-   "current": null,
+   "current": 1199.5,
    "days_held": 28
   },
   {
@@ -2544,9 +2544,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 4.01,
    "half_booked": false,
-   "current": null,
+   "current": 886.0,
    "days_held": 27
   },
   {
@@ -2658,9 +2658,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 4.45,
    "half_booked": true,
-   "current": null,
+   "current": 3875.0,
    "days_held": 26
   },
   {
@@ -2677,9 +2677,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 2.51,
    "half_booked": false,
-   "current": null,
+   "current": 1919.0,
    "days_held": 25
   },
   {
@@ -2696,9 +2696,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 9.55,
    "half_booked": true,
-   "current": null,
+   "current": 502.85,
    "days_held": 25
   },
   {
@@ -2715,9 +2715,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 7.18,
    "half_booked": true,
-   "current": null,
+   "current": 362.1,
    "days_held": 25
   },
   {
@@ -2810,9 +2810,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 6.32,
    "half_booked": false,
-   "current": null,
+   "current": 3208.0,
    "days_held": 22
   },
   {
@@ -2825,11 +2825,11 @@
    "t1": 2218.26,
    "t2": 2319.09,
    "score": 77.0,
-   "status": "open",
-   "exit_date": null,
-   "exit_price": null,
-   "exit_reason": null,
-   "pnl_pct": null,
+   "status": "closed",
+   "exit_date": "2026-11-23",
+   "exit_price": 2319.09,
+   "exit_reason": "Target 2",
+   "pnl_pct": 12.5,
    "half_booked": true,
    "current": null,
    "days_held": 21
@@ -2867,9 +2867,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 4.86,
    "half_booked": false,
-   "current": null,
+   "current": 185.6,
    "days_held": 21
   },
   {
@@ -2943,9 +2943,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": -1.7,
    "half_booked": false,
-   "current": null,
+   "current": 48800.0,
    "days_held": 20
   },
   {
@@ -3019,9 +3019,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 4.84,
    "half_booked": false,
-   "current": null,
+   "current": 326.05,
    "days_held": 19
   },
   {
@@ -3038,9 +3038,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 9.25,
    "half_booked": true,
-   "current": null,
+   "current": 933.0,
    "days_held": 19
   },
   {
@@ -3057,9 +3057,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 0.55,
    "half_booked": false,
-   "current": null,
+   "current": 2040.5,
    "days_held": 19
   },
   {
@@ -3114,9 +3114,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 11.24,
    "half_booked": true,
-   "current": null,
+   "current": 1571.0,
    "days_held": 18
   },
   {
@@ -3133,9 +3133,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": -0.87,
    "half_booked": false,
-   "current": null,
+   "current": 3757.0,
    "days_held": 18
   },
   {
@@ -3171,9 +3171,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 1.91,
    "half_booked": false,
-   "current": null,
+   "current": 357.0,
    "days_held": 18
   },
   {
@@ -3247,9 +3247,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": -0.22,
    "half_booked": false,
-   "current": null,
+   "current": 1585.5,
    "days_held": 13
   },
   {
@@ -3266,9 +3266,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 3.91,
    "half_booked": false,
-   "current": null,
+   "current": 1388.6,
    "days_held": 12
   },
   {
@@ -3285,9 +3285,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 2.37,
    "half_booked": false,
-   "current": null,
+   "current": 1860.0,
    "days_held": 11
   },
   {
@@ -3304,9 +3304,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 5.49,
    "half_booked": false,
-   "current": null,
+   "current": 30100.0,
    "days_held": 11
   },
   {
@@ -3323,9 +3323,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 5.61,
    "half_booked": true,
-   "current": null,
+   "current": 149.75,
    "days_held": 11
   },
   {
@@ -3342,9 +3342,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": -0.04,
    "half_booked": false,
-   "current": null,
+   "current": 4636.5,
    "days_held": 11
   },
   {
@@ -3380,9 +3380,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 0.92,
    "half_booked": false,
-   "current": null,
+   "current": 5067.0,
    "days_held": 8
   },
   {
@@ -3399,9 +3399,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 6.83,
    "half_booked": false,
-   "current": null,
+   "current": 8172.5,
    "days_held": 8
   },
   {
@@ -3418,9 +3418,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 4.67,
    "half_booked": false,
-   "current": null,
+   "current": 453.8,
    "days_held": 8
   },
   {
@@ -3437,9 +3437,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
-   "half_booked": false,
-   "current": null,
+   "pnl_pct": 9.75,
+   "half_booked": true,
+   "current": 53.7,
    "days_held": 7
   },
   {
@@ -3456,9 +3456,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 5.74,
    "half_booked": false,
-   "current": null,
+   "current": 2809.0,
    "days_held": 7
   },
   {
@@ -3475,9 +3475,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 1.26,
    "half_booked": false,
-   "current": null,
+   "current": 238.05,
    "days_held": 7
   },
   {
@@ -3494,9 +3494,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 1.05,
    "half_booked": false,
-   "current": null,
+   "current": 1507.9,
    "days_held": 7
   },
   {
@@ -3532,9 +3532,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": -0.19,
    "half_booked": false,
-   "current": null,
+   "current": 133.75,
    "days_held": 6
   },
   {
@@ -3551,9 +3551,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 6.4,
    "half_booked": false,
-   "current": null,
+   "current": 1438.8,
    "days_held": 6
   },
   {
@@ -3570,9 +3570,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": -0.63,
    "half_booked": false,
-   "current": null,
+   "current": 2682.0,
    "days_held": 6
   },
   {
@@ -3589,9 +3589,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": -1.68,
    "half_booked": false,
-   "current": null,
+   "current": 7430.0,
    "days_held": 5
   },
   {
@@ -3608,9 +3608,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": -0.21,
    "half_booked": false,
-   "current": null,
+   "current": 1132.65,
    "days_held": 5
   },
   {
@@ -3627,9 +3627,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 10.07,
    "half_booked": true,
-   "current": null,
+   "current": 1785.1,
    "days_held": 5
   },
   {
@@ -3646,9 +3646,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": -1.66,
    "half_booked": false,
-   "current": null,
+   "current": 2088.0,
    "days_held": 5
   },
   {
@@ -3665,9 +3665,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": -1.52,
    "half_booked": false,
-   "current": null,
+   "current": 1395.0,
    "days_held": 5
   },
   {
@@ -3684,9 +3684,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": -0.38,
    "half_booked": false,
-   "current": null,
+   "current": 5535.0,
    "days_held": 4
   },
   {
@@ -3703,9 +3703,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": -2.89,
    "half_booked": false,
-   "current": null,
+   "current": 2155.0,
    "days_held": 4
   },
   {
@@ -3722,9 +3722,9 @@
    "exit_date": null,
    "exit_price": null,
    "exit_reason": null,
-   "pnl_pct": null,
+   "pnl_pct": 1.48,
    "half_booked": false,
-   "current": null,
+   "current": 586.8,
    "days_held": 4
   },
   {
@@ -3760,7 +3760,75 @@
    "exit_reason": null,
    "pnl_pct": null,
    "half_booked": false
+  },
+  {
+   "date": "2026-11-24",
+   "category": "F&O",
+   "symbol": "KARURVYSYA",
+   "side": "LONG",
+   "entry": 384.1,
+   "sl": 364.89,
+   "t1": 422.51,
+   "t2": 441.71,
+   "score": 84.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false
+  },
+  {
+   "date": "2026-11-24",
+   "category": "F&O",
+   "symbol": "APLAPOLLO",
+   "side": "SHORT",
+   "entry": 1670.0,
+   "sl": 1736.8,
+   "t1": 1536.4,
+   "t2": 1469.6,
+   "score": 80.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false
+  },
+  {
+   "date": "2026-11-24",
+   "category": "F&O",
+   "symbol": "TATASTEEL",
+   "side": "SHORT",
+   "entry": 163.0,
+   "sl": 169.52,
+   "t1": 149.96,
+   "t2": 143.44,
+   "score": 80.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false
+  },
+  {
+   "date": "2026-11-24",
+   "category": "Swing",
+   "symbol": "LGEINDIA",
+   "side": "LONG",
+   "entry": 1777.5,
+   "sl": 1688.62,
+   "t1": 1955.25,
+   "t2": 2044.12,
+   "score": 95.0,
+   "status": "open",
+   "exit_date": null,
+   "exit_price": null,
+   "exit_reason": null,
+   "pnl_pct": null,
+   "half_booked": false
   }
  ],
- "updated_at": "2026-11-24 00:56 UTC"
+ "updated_at": "2026-11-24 23:03 UTC"
 }
